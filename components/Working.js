@@ -9,7 +9,6 @@ const Working = () => {
       const { y } = div.getBoundingClientRect();
       const dato = y / 100;
       setBack(dato);
-      console.log(dato);
     };
 
     window.addEventListener("scroll", handleScroll);

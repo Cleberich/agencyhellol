@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Portada from "../components/Portada";
 import Nav from "../components/Nav";
@@ -6,7 +7,56 @@ import What from "../components/What";
 import Clientes from "../components/Clientes";
 import Working from "../components/Working";
 import Footer from "../components/Footer";
+
 export default function Home() {
+  const [animacion1, setAnimacion1] = useState(false);
+  const [animacion2, setAnimacion2] = useState(false);
+  const [animacion3, setAnimacion3] = useState(false);
+  const [menu, setMenu] = useState(false);
+  const [activar, setActivar] = useState(false);
+
+  useEffect(() => {
+    const showAnimation1 = () => {
+      const forthepeople = document.getElementById("people");
+      const { y } = forthepeople.getBoundingClientRect();
+      console.log(y);
+      if (y < 350) {
+        setAnimacion1(true);
+      } else setAnimacion1(false);
+    };
+    window.addEventListener("scroll", showAnimation1);
+    const showAnimation2 = () => {
+      const weare = document.getElementById("weare");
+      const { y } = weare.getBoundingClientRect();
+      console.log(y);
+      if (y < 38) {
+        setAnimacion2(true);
+      } else setAnimacion2(false);
+    };
+    window.addEventListener("scroll", showAnimation2);
+    const showAnimation3 = () => {
+      const whatwedo = document.getElementById("whatwedo");
+      const { y } = whatwedo.getBoundingClientRect();
+      console.log(y);
+      if (y < 0) {
+        setAnimacion3(true);
+      } else setAnimacion3(false);
+    };
+    window.addEventListener("scroll", showAnimation3);
+  }, [animacion1, animacion2, animacion3]);
+
+  const abrir = () => {
+    setTimeout(() => {
+      setMenu(true);
+    }, 400);
+  };
+  const cerrar = () => {
+    setActivar(true);
+    setTimeout(() => {
+      setMenu(false);
+      setActivar(false);
+    }, 800);
+  };
   return (
     <>
       <Head>
@@ -15,23 +65,128 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body>
-        <Nav />
-        <Portada />
-        <div className="bg-[#101010] flex  pl-[120px] gap-5">
-          <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
-          <h2 className="text-[9px] uppercase font-bold text-[#fff]">
-            Show me more
-          </h2>
+      {menu ? (
+        <div className="bg-[#FE3E3E] fade-in h-screen grid text-center place-items-center">
+          <div className="absolute top-7 right-11">
+            <button onClick={() => cerrar()}>
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1}
+                stroke="currentColor"
+                className="w-10 h-10"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <nav className="cursor-pointer">
+            <div>
+              {" "}
+              <h2
+                className={
+                  activar == false
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                }
+              >
+                Work
+              </h2>
+            </div>
+            <div>
+              {" "}
+              <h2
+                className={
+                  activar == false
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                }
+              >
+                About
+              </h2>
+            </div>
+
+            <div>
+              {" "}
+              <h2
+                className={
+                  activar == false
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                }
+              >
+                What we do
+              </h2>
+            </div>
+            <div>
+              {" "}
+              <h2
+                className={
+                  activar == false
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                }
+              >
+                Careers
+              </h2>
+            </div>
+            <div>
+              {" "}
+              <h2
+                className={
+                  activar == false
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                }
+              >
+                Contact
+              </h2>
+            </div>
+          </nav>
+          <div className="absolute bottom-20 ">
+            <nav className="inline-block  text-[#050505] ">
+              <a href="#" className="mx-1 text-[14px] font-bold">
+                IG
+              </a>
+              <a href="#" className="mx-1 text-[14px] font-bold">
+                IN
+              </a>
+              <a href="#" className="mx-1 text-[14px] font-bold">
+                TW
+              </a>
+            </nav>
+          </div>
         </div>
-        <About />
-        <What />
-        <Clientes />
-        <Working />
-      </body>
-      <footer>
-        <Footer />
-      </footer>
+      ) : (
+        <>
+          <body>
+            <Nav abrir={abrir} menu={menu} />
+            <Portada />
+            <div className="bg-[#101010] flex  pl-[120px] gap-5 -mt-[100px]">
+              <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
+              <h2
+                className="text-[9px] uppercase font-bold text-[#fff] "
+                id="people"
+              >
+                Show me more
+              </h2>
+            </div>
+            <About animacion1={animacion1} animacion2={animacion2} />
+            <What animacion3={animacion3} />
+            <Clientes />
+            <Working />
+          </body>
+          <footer>
+            <Footer />
+          </footer>
+        </>
+      )}
     </>
   );
 }

@@ -1,13 +1,13 @@
 import React from "react";
 
-const What = () => {
+const What = ({ animacion3 }) => {
   return (
     <div className="bg-[#101010] h-screen px-[120px] py-[118px]">
       <h2 className="text-[9px] font-bold uppercase  text-[#fa3636]">
         what we do{" "}
       </h2>
       <div className="flex justify-between">
-        <div>
+        <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] mt-[26px]">
             Strategy
           </h2>
@@ -26,7 +26,7 @@ const What = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] mt-[26px]">
             Design
           </h2>
@@ -48,7 +48,7 @@ const What = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] mt-[26px]">
             Development
           </h2>
