@@ -5,11 +5,11 @@ const Footer = () => {
     <div className="bg-[#FB3D3D] h-screen w-full fixed bottom-0 z-[-1]">
       <h2
         id="contacto"
-        className="text-[42px] md:text-[97.7px] text-[#101010] text-center pt-[200px] md:pt-[0px] mt-[25%] font-bold leading-[77px] tracking-[-1px]"
+        className="text-[42px] md:text-[97.7px] xl:text-[145.9px] text-[#101010] text-center pt-[200px] md:pt-[0px] mt-[25%] font-bold leading-[77px] tracking-[-1px]"
       >
         hi@hellohello.is
       </h2>
-      <p className="text-center mt-8 text-xl">
+      <p className="text-center mt-8 xl:mt-20 text-xl xl:text-[33px]">
         Let's make something with <span className="text-white">love</span>,
         that's not a 👶🏻
       </p>

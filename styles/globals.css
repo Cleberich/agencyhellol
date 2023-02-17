@@ -301,6 +301,14 @@
     display: none;
   }
 }
+@media(min-width:1280px){
+  .tituloDesktop{
+    font-size: 130px;
+    margin-top: 4%;
+    line-height: 140px;
+    padding-left: 177px!important;
+  }
+}
 
 html{
   scroll-behavior:smooth;

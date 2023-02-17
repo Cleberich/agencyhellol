@@ -15,6 +15,7 @@ export default function Home() {
   const [animacion2, setAnimacion2] = useState(false);
   const [animacion3, setAnimacion3] = useState(false);
   const [menu, setMenu] = useState(false);
+  const [ads, setAds] = useState(false);
   const [activar, setActivar] = useState(false);
 
   useEffect(() => {
@@ -59,6 +60,10 @@ export default function Home() {
       setActivar(false);
     }, 800);
   };
+
+  setTimeout(() => {
+    setAds(true);
+  }, 12000);
 
   return (
     <>
@@ -191,10 +196,10 @@ export default function Home() {
         <body>
           <Nav abrir={abrir} menu={menu} />
           <Portada menu={menu} />
-          <div className="bg-[#101010] flex pl-[120px] gap-5 -mt-[100px] show">
+          <div className="bg-[#101010] flex pl-[120px] xl:pl-[177px] gap-5 -mt-[100px] lg:-mt-[60px] show">
             <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
             <h2
-              className="text-[9px] uppercase font-bold text-[#fff] "
+              className="text-[9px] xl:text-[12px] uppercase font-[600] text-[#fff] "
               id="people"
             >
               Show me more
@@ -208,6 +213,16 @@ export default function Home() {
         <footer>
           <Footer />
         </footer>
+        {ads && (
+          <div className="bg-white fixed bottom-0 h-12 w-full rounded-t-xl  flex">
+            <h2 className="text-black font-semibold mx-6 text-[12px] my-auto">
+              👋 Thanks for visit my Design{" "}
+              <a href="tel:091411527" className="text-center text-[#FB3D3D]">
+                Click here for contact me
+              </a>
+            </h2>
+          </div>
+        )}
       </>
     </>
   );

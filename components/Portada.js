@@ -25,7 +25,7 @@ const Portada = ({ menu }) => {
         <h1
           className={
             menu
-              ? "text-transparent text-[97.3px] leading-[97px] font-bold absolute top-[255px] pl-8 md:pl-[120px] swing-in-bottom-fwdd tituloDesktop z-10"
+              ? "text-transparent md:text-[97.3px]  leading-[97px] font-bold absolute top-[255px] pl-8 md:pl-[120px] swing-in-bottom-fwdd tituloDesktop z-10"
               : "text-white text-[97.3px] leading-[97px] font-bold absolute top-[255px] pl-8 md:pl-[120px] swing-in-bottom-fwdd tituloDesktop z-10"
           }
         >
