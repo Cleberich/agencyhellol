@@ -165,7 +165,7 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <body>
+          <body className="bg-[#101010]">
             <Nav abrir={abrir} menu={menu} />
             <Portada />
             <div className="bg-[#101010] flex pl-[120px] gap-5 -mt-[100px] show">
