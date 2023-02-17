@@ -213,11 +213,20 @@ export default function Home() {
         <footer>
           <Footer />
         </footer>
-        {ads && (
-          <div className="bg-white fixed bottom-0 h-12 w-full rounded-t-xl  flex">
-            <h2 className="text-black font-semibold mx-6 text-[12px] my-auto">
+        {ads ? (
+          <div className="bg-[#000] fixed bottom-0 h-12 w-full rounded-t-xl  flex">
+            <h2 className="text-white font-semibold mx-6 text-[12px] my-auto">
               👋 Thanks for visit my Design{" "}
               <a href="tel:091411527" className="text-center text-[#FB3D3D]">
+                Click here for contact me
+              </a>
+            </h2>
+          </div>
+        ) : (
+          <div className="bg-transparent transition-colors fixed bottom-0 h-12 w-full rounded-t-xl  flex">
+            <h2 className="text-transparent font-semibold mx-6 text-[12px] my-auto">
+              👋 Thanks for visit my Design{" "}
+              <a href="tel:091411527" className="text-center text-transparent">
                 Click here for contact me
               </a>
             </h2>

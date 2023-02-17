@@ -2,7 +2,7 @@ import React from "react";
 
 const Clientes = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3  bg-[#101010] pt-[400px] md:pt-0">
+    <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3  bg-[#101010] bg-center pt-[400px] md:pt-0">
       <div id="work">
         <img src="clientes/1.gif" />
       </div>
@@ -37,7 +37,7 @@ const Clientes = () => {
         <img src="clientes/11.webp" />
       </div>
       <div className="bg-[#fe3e3e]">
-        <h2 className="text-[28.5px] font-bold flex gap-5 pl-12 pt-12">
+        <h2 className="text-[28.5px] font-bold flex gap-5 pl-4 md:pl-12 pt-4 md:pt-12">
           See More <br></br> Work{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
