@@ -301,7 +301,7 @@
     display: none;
   }
 }
-@media(min-width:1280px){
+@media(min-width:1536px){
   .tituloDesktop{
     font-size: 130px;
     margin-top: 4%;

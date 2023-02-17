@@ -3,15 +3,15 @@ import React from "react";
 const What = ({ animacion3 }) => {
   return (
     <div
-      className="bg-[#101010] h-screen px-8 md:px-[120px] xl:px-[177px] py-[118px] z-40"
+      className="bg-[#101010] h-screen px-8 md:px-[120px] 2xl:px-[177px] py-[118px] z-40"
       id="services"
     >
-      <h2 className="text-[9px] xl:text-[12px] font-bold uppercase  text-[#fa3636]">
+      <h2 className="text-[9px] 2xl:text-[12px] font-bold uppercase  text-[#fa3636]">
         what we do{" "}
       </h2>
       <div className="flex justify-between about">
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
-          <h2 className="text-white font-bold text-[42.5px] xl:text-[63.4px] mt-[26px]">
+          <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
             Strategy
           </h2>
           <ul className="mt-[29px]">
@@ -30,7 +30,7 @@ const What = ({ animacion3 }) => {
           </ul>
         </div>
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
-          <h2 className="text-white font-bold text-[42.5px] xl:text-[63.4px] mt-[26px]">
+          <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
             Design
           </h2>
           <ul className="mt-[29px]">
@@ -52,7 +52,7 @@ const What = ({ animacion3 }) => {
           </ul>
         </div>
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
-          <h2 className="text-white font-bold text-[42.5px] xl:text-[63.4px] mt-[26px]">
+          <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
             Development
           </h2>
           <ul className="mt-[29px]">

@@ -63,7 +63,7 @@ export default function Home() {
 
   setTimeout(() => {
     setAds(true);
-  }, 12000);
+  }, 25000);
 
   return (
     <>
@@ -196,10 +196,10 @@ export default function Home() {
         <body>
           <Nav abrir={abrir} menu={menu} />
           <Portada menu={menu} />
-          <div className="bg-[#101010] flex pl-[120px] xl:pl-[177px] gap-5 -mt-[100px] lg:-mt-[60px] show">
+          <div className="bg-[#101010] flex pl-[120px] 2xl:pl-[177px] gap-5 -mt-[100px] lg:-mt-[60px] show">
             <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
             <h2
-              className="text-[9px] xl:text-[12px] uppercase font-[600] text-[#fff] "
+              className="text-[9px] 2xl:text-[12px] uppercase font-[600] text-[#fff] "
               id="people"
             >
               Show me more
@@ -214,8 +214,8 @@ export default function Home() {
           <Footer />
         </footer>
         {ads ? (
-          <div className="bg-[#000] fixed bottom-0 h-12 w-full rounded-t-xl  flex">
-            <h2 className="text-white font-semibold mx-6 text-[12px] my-auto">
+          <div className="bg-[#000] fixed bottom-0 h-12 w-full rounded-t-2xl  flex justify-center">
+            <h2 className="text-white font-semibold mx-6 text-[12px] my-auto text-center">
               👋 Thanks for visit my Design{" "}
               <a href="tel:091411527" className="text-center text-[#FB3D3D]">
                 Click here for contact me
@@ -223,8 +223,8 @@ export default function Home() {
             </h2>
           </div>
         ) : (
-          <div className="bg-transparent transition-colors fixed bottom-0 h-12 w-full rounded-t-xl  flex">
-            <h2 className="text-transparent font-semibold mx-6 text-[12px] my-auto">
+          <div className="bg-transparent transition-colors fixed bottom-0 h-12 w-full rounded-t-2xl  flex">
+            <h2 className="text-transparent font-semibold mx-6 text-[12px] my-auto text-center">
               👋 Thanks for visit my Design{" "}
               <a href="tel:091411527" className="text-center text-transparent">
                 Click here for contact me

@@ -137,10 +137,10 @@ const Working = () => {
   return (
     <>
       <div className='bg-[url("/img/mundo.png")] bg-cover h-[200vh] md:h-screen'>
-        <h2 className="text-white text-[41.8px] xl:text-[63px]  font-bold text-center pt-[100px] md:pt-[197px]">
+        <h2 className="text-white text-[41.8px] 2xl:text-[63px]  font-bold text-center pt-[100px] md:pt-[197px]">
           Working <br className="visible md:hidden"></br>remotely?
         </h2>
-        <p className="text-[22px] xl:text-[33px]  text-white mt-[48px] font-[300] text-center leading-10">
+        <p className="text-[22px] 2xl:text-[33px]  text-white mt-[48px] font-[300] text-center leading-10">
           <span className="font-[500]">
             Yes, and we’ve got quite good at it.
           </span>{" "}
