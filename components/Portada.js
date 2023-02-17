@@ -1,6 +1,6 @@
-const Portada = () => {
+const Portada = ({ menu }) => {
   return (
-    <div className="bg-[#101010] h-[80vh] md:h-screen -mt-[59px]">
+    <div className="bg-[#101010] h-[80vh] md:h-screen -mt-[59px] ">
       <div className="flex justify-end  z-0 videoPortada">
         <video
           autoPlay
@@ -8,7 +8,7 @@ const Portada = () => {
           muted
           playsInline
           webkit-playsinline="true"
-          className="w-[80%] md:w-[60%] md:slide-in-bottom desktop"
+          className="w-[80%] md:w-[60%] slide-in-bottom desktop"
           src="/videos/hh-videos.mp4"
         />
         <video
@@ -17,12 +17,28 @@ const Portada = () => {
           muted
           playsInline
           webkit-playsinline="true"
-          className="w-[80%] md:w-[60%] md:slide-in-bottom celu"
+          className="w-[80%] md:w-[60%] slide-in-bottom celu"
           src="/videos/mobile.mp4"
         />
       </div>
       <div>
-        <h1 className="text-white text-[42px] md:text-[97.3px] leading-[40px] md:leading-[97px] font-bold absolute top-[130px] md:top-[255px] pl-8 md:pl-[120px] swing-in-bottom-fwdd ">
+        <h1
+          className={
+            menu
+              ? "text-transparent text-[97.3px] leading-[97px] font-bold absolute top-[255px] pl-8 md:pl-[120px] swing-in-bottom-fwdd tituloDesktop z-10"
+              : "text-white text-[97.3px] leading-[97px] font-bold absolute top-[255px] pl-8 md:pl-[120px] swing-in-bottom-fwdd tituloDesktop z-10"
+          }
+        >
+          We design <br></br>
+          <span>for the people</span>
+        </h1>
+        <h1
+          className={
+            menu
+              ? "text-transparent text-[42px]  leading-[40px]  font-bold absolute top-[130px]  pl-8 tituloCelu "
+              : "text-white text-[42px]  leading-[40px]  font-bold absolute top-[130px]  pl-8 tituloCelu "
+          }
+        >
           We design <br></br>
           <span>for the people</span>
         </h1>

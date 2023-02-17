@@ -2,7 +2,10 @@ import React from "react";
 
 const What = ({ animacion3 }) => {
   return (
-    <div className="bg-[#101010] h-screen px-8 md:px-[120px] py-[118px] ">
+    <div
+      className="bg-[#101010] h-screen px-8 md:px-[120px] py-[118px] z-40"
+      id="services"
+    >
       <h2 className="text-[9px] font-bold uppercase  text-[#fa3636]">
         what we do{" "}
       </h2>

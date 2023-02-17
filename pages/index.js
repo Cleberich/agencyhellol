@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import Head from "next/head";
 import Portada from "../components/Portada";
 import Nav from "../components/Nav";
@@ -7,6 +8,7 @@ import What from "../components/What";
 import Clientes from "../components/Clientes";
 import Working from "../components/Working";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   const [animacion1, setAnimacion1] = useState(false);
@@ -57,6 +59,7 @@ export default function Home() {
       setActivar(false);
     }, 800);
   };
+
   return (
     <>
       <Head>
@@ -65,8 +68,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {menu ? (
-        <div className="bg-[#FE3E3E] fade-in h-screen grid text-center place-items-center">
+      {menu && (
+        <div className="bg-[#FE3E3E] fade-in h-screen grid text-center place-items-center z-[1000]">
           <div className="absolute top-7 right-11">
             <button onClick={() => cerrar()}>
               {" "}
@@ -87,8 +90,13 @@ export default function Home() {
             </button>
           </div>
           <nav className="cursor-pointer">
-            <div>
-              {" "}
+            <div
+              onClick={() => {
+                {
+                  cerrar(), (location.href = "#work");
+                }
+              }}
+            >
               <h2
                 className={
                   activar == false
@@ -99,8 +107,13 @@ export default function Home() {
                 Work
               </h2>
             </div>
-            <div>
-              {" "}
+            <div
+              onClick={() => {
+                {
+                  cerrar(), (location.href = "#weare");
+                }
+              }}
+            >
               <h2
                 className={
                   activar == false
@@ -112,8 +125,13 @@ export default function Home() {
               </h2>
             </div>
 
-            <div>
-              {" "}
+            <div
+              onClick={() => {
+                {
+                  cerrar(), (location.href = "#services");
+                }
+              }}
+            >
               <h2
                 className={
                   activar == false
@@ -136,8 +154,13 @@ export default function Home() {
                 Careers
               </h2>
             </div>
-            <div>
-              {" "}
+            <div
+              onClick={() => {
+                {
+                  cerrar(), (location.href = "#contacto");
+                }
+              }}
+            >
               <h2
                 className={
                   activar == false
@@ -163,30 +186,29 @@ export default function Home() {
             </nav>
           </div>
         </div>
-      ) : (
-        <>
-          <body className="bg-[#101010]">
-            <Nav abrir={abrir} menu={menu} />
-            <Portada />
-            <div className="bg-[#101010] flex pl-[120px] gap-5 -mt-[100px] show">
-              <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
-              <h2
-                className="text-[9px] uppercase font-bold text-[#fff] "
-                id="people"
-              >
-                Show me more
-              </h2>
-            </div>
-            <About animacion1={animacion1} animacion2={animacion2} />
-            <What animacion3={animacion3} />
-            <Clientes />
-            <Working />
-          </body>
-          <footer>
-            <Footer />
-          </footer>
-        </>
       )}
+      <>
+        <body>
+          <Nav abrir={abrir} menu={menu} />
+          <Portada menu={menu} />
+          <div className="bg-[#101010] flex pl-[120px] gap-5 -mt-[100px] show">
+            <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
+            <h2
+              className="text-[9px] uppercase font-bold text-[#fff] "
+              id="people"
+            >
+              Show me more
+            </h2>
+          </div>
+          <About animacion1={animacion1} animacion2={animacion2} />
+          <What animacion3={animacion3} />
+          <Clientes />
+          <Working />
+        </body>
+        <footer>
+          <Footer />
+        </footer>
+      </>
     </>
   );
 }
