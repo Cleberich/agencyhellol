@@ -8,8 +8,17 @@ const Portada = () => {
           muted
           playsInline
           webkit-playsinline="true"
-          className="w-[80%] md:w-[60%] slide-in-bottom "
+          className="w-[80%] md:w-[60%] slide-in-bottom desktop"
           src="/videos/hh-videos.mp4"
+        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          webkit-playsinline="true"
+          className="w-[80%] md:w-[60%] slide-in-bottom celu"
+          src="/videos/mobile.mp4"
         />
       </div>
       <div>

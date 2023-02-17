@@ -9,7 +9,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body className="bg-[#101010]">
         <Main />
         <NextScript />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
