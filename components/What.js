@@ -2,11 +2,11 @@ import React from "react";
 
 const What = ({ animacion3 }) => {
   return (
-    <div className="bg-[#101010] h-screen px-[120px] py-[118px]">
+    <div className="bg-[#101010] h-screen px-8 md:px-[120px] py-[118px] ">
       <h2 className="text-[9px] font-bold uppercase  text-[#fa3636]">
         what we do{" "}
       </h2>
-      <div className="flex justify-between">
+      <div className="flex justify-between about">
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] mt-[26px]">
             Strategy

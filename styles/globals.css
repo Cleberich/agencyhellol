@@ -269,3 +269,21 @@
     opacity: 0;
   }
 }
+@media(max-width: 400px) {
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .show{
+    display: none;
+  }
+  .videoPortada{
+    padding-top: 250px;
+  }
+  .reloj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

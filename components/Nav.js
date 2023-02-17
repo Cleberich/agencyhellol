@@ -2,7 +2,7 @@ const Nav = ({ abrir, menu }) => {
   return (
     <div className="bg-transparent relative top-0 z-50 ">
       <nav className=" flex justify-between">
-        <div className="pt-[29px] -ml-[6px] ">
+        <div className="pt-[29px] -ml-[16px] md:-ml-[6px] ">
           {" "}
           <img src="/img/logo.svg" className="w-40 mp-12 ml-12 " />
         </div>

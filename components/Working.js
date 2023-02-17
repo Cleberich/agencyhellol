@@ -15,9 +15,9 @@ const Working = () => {
   }, []);
   return (
     <>
-      <div className='bg-[url("/img/mundo.png")] bg-cover h-screen'>
-        <h2 className="text-white text-[41.8px] font-bold text-center pt-[197px]">
-          Working remotely?
+      <div className='bg-[url("/img/mundo.png")] bg-cover h-[200vh] md:h-screen'>
+        <h2 className="text-white text-[41.8px] font-bold text-center pt-[100px] md:pt-[197px]">
+          Working <br className="visible md:hidden"></br>remotely?
         </h2>
         <p className="text-[22px] text-white mt-[48px] font-[300] text-center leading-10">
           <span className="font-[500]">
@@ -26,7 +26,7 @@ const Working = () => {
           Being based in Uruguay (UTC - 3)<br></br>we can seamlessly integrate
           into your local office hours.
         </p>
-        <div className="flex justify-center gap-[89px] mt-[79px]">
+        <div className="flex justify-center gap-[89px] mt-[79px] reloj">
           <div>
             <img src="/img/clock.svg" style={{ transform: "rotate(400deg)" }} />
             <h5 className="text-[18.6px] font-[500] text-white mt-[32px]">

@@ -92,8 +92,8 @@ export default function Home() {
               <h2
                 className={
                   activar == false
-                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
-                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[42px] md:text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[42px] md:text-[72px] font-bold text-center swing-out-bottom-bck"
                 }
               >
                 Work
@@ -104,8 +104,8 @@ export default function Home() {
               <h2
                 className={
                   activar == false
-                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
-                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[42px] md:text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[42px] md:text-[72px] font-bold text-center swing-out-bottom-bck"
                 }
               >
                 About
@@ -117,8 +117,8 @@ export default function Home() {
               <h2
                 className={
                   activar == false
-                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
-                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E]  text-[42px] md:text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E]  text-[42px] md:text-[72px] font-bold text-center swing-out-bottom-bck"
                 }
               >
                 What we do
@@ -129,8 +129,8 @@ export default function Home() {
               <h2
                 className={
                   activar == false
-                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
-                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[42px] md:text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[42px] md:text-[72px] font-bold text-center swing-out-bottom-bck"
                 }
               >
                 Careers
@@ -141,16 +141,16 @@ export default function Home() {
               <h2
                 className={
                   activar == false
-                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
-                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[72px] font-bold text-center swing-out-bottom-bck"
+                    ? "text-[#050505]  border-b-4 border-[#FE3E3E] text-[42px] md:text-[72px] font-bold text-center hvr-sweep-to-right swing-in-bottom-fwdd"
+                    : "text-[#050505]  border-b-4 border-[#FE3E3E] text-[42px] md:text-[72px] font-bold text-center swing-out-bottom-bck"
                 }
               >
                 Contact
               </h2>
             </div>
           </nav>
-          <div className="absolute bottom-20 ">
-            <nav className="inline-block  text-[#050505] ">
+          <div className="absolute bottom-20 ml-[40%] md:ml-[0]">
+            <nav className="inline-block  text-[#050505]  ">
               <a href="#" className="mx-1 text-[14px] font-bold">
                 IG
               </a>
@@ -168,7 +168,7 @@ export default function Home() {
           <body>
             <Nav abrir={abrir} menu={menu} />
             <Portada />
-            <div className="bg-[#101010] flex  pl-[120px] gap-5 -mt-[100px]">
+            <div className="bg-[#101010] flex pl-[120px] gap-5 -mt-[100px] show">
               <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
               <h2
                 className="text-[9px] uppercase font-bold text-[#fff] "
