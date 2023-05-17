@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setPaginaLista(true);
-    }, 2000);
+    }, 1000);
   }, []);
   return paginaLista ? (
     <Component {...pageProps} />
@@ -41,11 +41,6 @@ export default function App({ Component, pageProps }) {
             />
           </svg>
         </div>
-      </div>
-      <div>
-        <h2 className="text-white md:text-[30px] text-[22px] text-center absolute top-[62vh] md:top-[65vh] left-[12%] md:left-[9%] right-[12%]">
-          This website is a copy for practical purposes
-        </h2>
       </div>
     </>
   );
