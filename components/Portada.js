@@ -18,7 +18,7 @@ const Portada = ({ menu, animacion }) => {
           playsInline
           webkit-playsinline="true"
           className="w-[80%] md:w-[60%] slide-in-bottom celu"
-          src="/videos/mobile.mp4"
+          src="/videos/hhh-video.mp4"
         />
       </div>
       <div>
