@@ -1,6 +1,6 @@
 const Portada = ({ menu, animacion }) => {
   return (
-    <div className="bg-[#101010] h-[80vh] md:h-screen -mt-[59px] ">
+    <div className="bg-[#0E141B] h-[80vh] md:h-screen -mt-[75px] ">
       <div className="flex justify-end  z-0 videoPortada">
         <video
           autoPlay
@@ -41,8 +41,10 @@ const Portada = ({ menu, animacion }) => {
               : "text-white text-[42px]  leading-[40px]  font-bold absolute top-[130px]  pl-8 tituloCelu "
           }
         >
-          We design <br></br>
-          <span>for the people</span>
+          I'm Front-end <br></br>
+          <span className={animacion && "hvr-sweep-to-right"} id="title">
+            Developer
+          </span>
         </h1>
       </div>
       <div>

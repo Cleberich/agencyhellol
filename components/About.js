@@ -1,6 +1,6 @@
 const About = ({ animacion1, animacion2 }) => {
   return (
-    <div className="px-8 md:px-[120px] 2xl:px-[177px] pt-44 2xl:pt-[287px] bg-[#101010] pb-[40px] z-40">
+    <div className="px-8 md:px-[120px] 2xl:px-[177px] pt-44 2xl:pt-[287px] bg-[#0E141B] pb-[40px] z-40">
       <h2
         className="text-[9px] 2xl:text-[12px] font-bold uppercase  text-[#fa3636]"
         id="weare"

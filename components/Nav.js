@@ -4,8 +4,8 @@ const Nav = ({ abrir, menu }) => {
       <nav className=" flex justify-between">
         <div className="pt-[29px] -ml-[16px] md:-ml-[6px] ">
           {" "}
-          <a href="/">
-            <img src="/img/logocleber.png" className="w-40 mp-12 ml-12 " />
+          <a href="/" className="flex ">
+            <img src="/img/logito.png" className="w-40 mp-12 ml-12 " />{" "}
           </a>
         </div>
         <div className="text-white  pt-[29px] mr-[36px]">

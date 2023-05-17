@@ -3,7 +3,7 @@ import React from "react";
 const What = ({ animacion3 }) => {
   return (
     <div
-      className="bg-[#101010] h-screen px-8 md:px-[120px] 2xl:px-[177px] py-[118px] z-40"
+      className="bg-[#0E141B] h-screen px-8 md:px-[120px] 2xl:px-[177px] py-[118px] z-40"
       id="services"
     >
       <h2 className="text-[9px] 2xl:text-[12px] font-bold uppercase  text-[#fa3636]">

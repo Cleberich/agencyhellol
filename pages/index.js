@@ -206,7 +206,7 @@ export default function Home() {
         <body>
           <Nav abrir={abrir} menu={menu} />
           <Portada menu={menu} animacion={animacion} />
-          <div className="bg-[#101010] flex pl-[120px] 2xl:pl-[177px] gap-5 -mt-[100px] lg:-mt-[60px] show">
+          <div className="bg-[#0E141B] flex pl-[120px] 2xl:pl-[177px] gap-5 -mt-[100px] lg:-mt-[60px] show">
             <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
             <h2
               className="text-[9px] 2xl:text-[12px] uppercase font-[600] text-[#fff] "

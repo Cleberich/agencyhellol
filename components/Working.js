@@ -138,54 +138,31 @@ const Working = () => {
     <>
       <div className='bg-[url("/img/mundo.png")] bg-cover h-[200vh] md:h-screen'>
         <h2 className="text-white text-[41.8px] 2xl:text-[63px]  font-bold text-center pt-[100px] md:pt-[197px]">
-          Working <br className="visible md:hidden"></br>remotely?
+          Actions <br className="visible md:hidden"></br>
         </h2>
-        <p className="text-[22px] 2xl:text-[33px]  text-white mt-[48px] font-[300] text-center leading-10">
-          <span className="font-[500]">
-            Yes, and we’ve got quite good at it.
-          </span>{" "}
-          Being based in Uruguay (UTC - 3)<br></br>we can seamlessly integrate
-          into your local office hours.
-        </p>
-        <div className="flex justify-center gap-[89px] mt-[79px] reloj">
-          <div>
-            <img
-              src="/img/clock.svg"
-              style={{ transform: `rotate(${sanr}deg)` }}
-            />
-            <h5 className="text-[18.6px] font-[500] text-white mt-[32px]">
-              San Francisco, CA
-            </h5>
-            <p className="text-[18.3px] text-white text-center font-light">
-              {san}
-            </p>
-          </div>
-          <div>
-            <img
-              src="/img/clock.svg"
-              style={{ transform: `rotate(${nyr}deg)` }}
-            />
-            <h5 className="text-[18.6px] font-[500] text-white mt-[32px]">
-              New York, NY
-            </h5>
-            <p className="text-[18.3px] text-white text-center font-light">
-              {ny}
-            </p>
-          </div>
-          <div>
-            <img
-              src="/img/clock.svg"
-              style={{ transform: `rotate(${mvdr}deg)` }}
-            />
-            <h5 className="text-[18.6px] font-[500] text-white mt-[32px]">
-              Montevideo, UY
-            </h5>
-            <p className="text-[18.3px] text-white text-center font-light">
-              {mvd}
-            </p>
-          </div>
+        <div className="flex justify-center mt-4">
+          <a className="py-3 rounded-lg text-center bg-[#FC3E3F] hover:bg-black w-64 text-white">
+            Dowload resume
+          </a>
+        </div>
+        <div className="flex justify-center mt-4">
+          <a
+            href="https://github.com/Cleberich"
+            className="py-3 rounded-lg text-center bg-[#FC3E3F] hover:bg-black w-64 text-white"
+          >
+            Visit Github
+          </a>
+        </div>
+        <div className="flex justify-center mt-4">
+          <a
+            href="https://www.linkedin.com/in/cleber-desarrollador-web/"
+            className="py-3 rounded-lg bg-[#FC3E3F] text-center hover:bg-black w-64 text-white"
+          >
+            Visit Linkedin
+          </a>
         </div>
       </div>
+
       <div
         id="fondo"
         className="h-[100vh] bg-black opacity-80"

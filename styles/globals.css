@@ -269,7 +269,7 @@
     opacity: 0;
   }
 }
-@media(max-width: 400px) {
+@media(max-width: 440px) {
   .about{
     display: flex;
     flex-direction: column;
@@ -293,7 +293,7 @@
     display: none;
   }
 }
-@media(min-width: 401px){
+@media(min-width: 441px){
   .celu{
     display: none;
   }
@@ -353,4 +353,7 @@ html{
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   padding: 10px;
+}
+.icon--verified{
+  color: #EA3202;
 }
