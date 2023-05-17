@@ -7,11 +7,11 @@ const Footer = () => {
         id="contacto"
         className="text-[42px] md:text-[97.7px] 2xl:text-[145.9px] text-[#101010] text-center pt-[200px] md:pt-[0px] mt-[25%] font-bold leading-[77px] tracking-[-1px]"
       >
-        hi@hellohello.is
+        +598 91 411 527
       </h2>
       <p className="text-center mt-8 2xl:mt-20 text-2xl 2xl:text-[33px]">
-        Let's make something with <span className="text-white">love</span>,
-        that's not a 👶🏻
+        Do you have a proposal for me?{" "}
+        <span className="text-white">Contact me</span>
       </p>
     </div>
   );

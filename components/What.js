@@ -7,69 +7,103 @@ const What = ({ animacion3 }) => {
       id="services"
     >
       <h2 className="text-[9px] 2xl:text-[12px] font-bold uppercase  text-[#fa3636]">
-        what we do{" "}
+        Skill
       </h2>
       <div className="flex justify-between about">
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
-            Strategy
+            Desing
           </h2>
           <ul className="mt-[29px]">
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              UX Audits
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/html5.png" alt="html" className="w-8 h-8" /> HTML
             </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              Design Sprints
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              {" "}
+              <img
+                src="/img/css.png"
+                alt="css"
+                className="w-8 h-8 -mt-1 mb-1"
+              />{" "}
+              CSS
             </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              User Testing
+            <li className="text-[#999999] text-[21px] font-light mt-[12px flex gap-2">
+              <img src="/img/js.png" alt="javascript" className="w-8 h-8" />{" "}
+              Javascript
             </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              Product Roadmapp
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/react.png" alt="react" className="w-8 h-8" /> React
+            </li>
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/nextjs.png" alt="next js" className="w-8 h-8" />{" "}
+              Next js
+            </li>
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/wp.png" alt="wordpress" className="w-8 h-8" />{" "}
+              Wordpress
             </li>
           </ul>
         </div>
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
-            Design
+            Databases
           </h2>
           <ul className="mt-[29px]">
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              Product Design
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img
+                src="/img/firebase.png"
+                alt="wordpress"
+                className="w-8 h-8"
+              />{" "}
+              Firebase
             </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              Website Design
-            </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              UX Design
-            </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              UI Design
-            </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              Brand Design
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/mongo.png" alt="mongo" className="w-8 h-8" /> Mongo
+              DB
             </li>
           </ul>
         </div>
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
-            Development
+            Styles
           </h2>
           <ul className="mt-[29px]">
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              Front-end Development
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img
+                src="/img/bootstrap.png"
+                alt="bootstrap"
+                className="w-8 h-8"
+              />{" "}
+              Bootstrap 5
             </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              Back-end Development
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/tail.png" alt="tailwind" className="w-8 h-8" />{" "}
+              Tailwind
             </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              Mobile App Development
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img
+                src="/img/styled.png"
+                alt="style component"
+                className="w-8 h-8"
+              />{" "}
+              Styled Components
             </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              React
+          </ul>
+        </div>
+        <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
+          <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
+            Others
+          </h2>
+          <ul className="mt-[29px]">
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/git.png" alt="github" className="w-8 h-8" /> GitHub
             </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px]">
-              Headless CMS{" "}
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/vercel.png" alt="vercel" className="w-8 h-8" />{" "}
+              Vercel
+            </li>
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/node.png" alt="node" className="w-8 h-8" /> Node js
             </li>
           </ul>
         </div>

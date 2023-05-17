@@ -1,4 +1,4 @@
-const Portada = ({ menu }) => {
+const Portada = ({ menu, animacion }) => {
   return (
     <div className="bg-[#101010] h-[80vh] md:h-screen -mt-[59px] ">
       <div className="flex justify-end  z-0 videoPortada">
@@ -9,7 +9,7 @@ const Portada = ({ menu }) => {
           playsInline
           webkit-playsinline="true"
           className="w-[80%] md:w-[60%] slide-in-bottom desktop"
-          src="/videos/hh-videos.mp4"
+          src="/videos/hhh-video.mp4"
         />
         <video
           autoPlay
@@ -29,8 +29,10 @@ const Portada = ({ menu }) => {
               : "text-white text-[97.3px] leading-[97px] font-bold absolute top-[255px] pl-8 md:pl-[120px] swing-in-bottom-fwdd tituloDesktop z-10"
           }
         >
-          We design <br></br>
-          <span>for the people</span>
+          I'm Front-end <br></br>
+          <span className={animacion && "hvr-sweep-to-right"} id="title">
+            Developer
+          </span>
         </h1>
         <h1
           className={

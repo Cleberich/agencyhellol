@@ -4,37 +4,37 @@ const Clientes = () => {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3  bg-[#101010] bg-center pt-[400px] md:pt-0">
       <div id="work">
-        <img src="clientes/1.gif" />
+        <img src="clientes/31.gif" />
       </div>
       <div>
-        <img src="clientes/2.webp" />
+        <img src="clientes/22.gif" />
       </div>
       <div>
-        <img src="clientes/3.webp" />
+        <img src="clientes/25.gif" />
       </div>
       <div>
-        <img src="clientes/4.webp" />
+        <img src="clientes/24.gif" />
       </div>
       <div>
-        <img src="clientes/5.webp" />
+        <img src="clientes/23.gif" />
       </div>
       <div>
-        <img src="clientes/6.webp" />
+        <img src="clientes/26.gif" />
       </div>
       <div>
-        <img src="clientes/7.webp" />
+        <img src="clientes/27.gif" />
       </div>
       <div>
-        <img src="clientes/8.webp" />
+        <img src="clientes/28.gif" />
       </div>
       <div>
-        <img src="clientes/9.webp" />
+        <img src="clientes/29.gif" />
       </div>
       <div>
-        <img src="clientes/10.gif" />
+        <img src="clientes/30.gif" />
       </div>
       <div>
-        <img src="clientes/11.webp" />
+        <img src="clientes/31.gif" />
       </div>
       <div className="bg-[#fe3e3e]">
         <h2 className="text-[28.5px] font-bold flex gap-5 pl-4 md:pl-12 pt-4 md:pt-12">

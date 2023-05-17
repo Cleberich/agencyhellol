@@ -5,7 +5,7 @@ const Nav = ({ abrir, menu }) => {
         <div className="pt-[29px] -ml-[16px] md:-ml-[6px] ">
           {" "}
           <a href="/">
-            <img src="/img/logo.svg" className="w-40 mp-12 ml-12 " />
+            <img src="/img/logocleber.png" className="w-40 mp-12 ml-12 " />
           </a>
         </div>
         <div className="text-white  pt-[29px] mr-[36px]">

@@ -5,7 +5,7 @@ const About = ({ animacion1, animacion2 }) => {
         className="text-[9px] 2xl:text-[12px] font-bold uppercase  text-[#fa3636]"
         id="weare"
       >
-        about us
+        about me
       </h2>
       <h2
         className={
@@ -14,11 +14,10 @@ const About = ({ animacion1, animacion2 }) => {
             : "text-transparent text-[28px] md:text-[44.4px] xl:text-[50px] font-light mt-[37px] "
         }
       >
-        We believe in the greater good, we believe in doing things for the
-        people, we believe in making their lives easier and more enjoyable, we
-        believe in businesses that keep that in mind and we help them grow, by
-        making beautifully designed digital experiences, simple to use and user
-        friendly.
+        I am a skilled developer with experience in JavaScript, and I have
+        expertise in frameworks React. I am a quick learner who adapts to the
+        project and focuses on optimizing it using best practices, all while
+        evolving as a developer in the process.
       </h2>
       <h2
         id="whatwedo"
@@ -28,7 +27,7 @@ const About = ({ animacion1, animacion2 }) => {
             : "text-[29px] md:text-[44.4px] xl:text-[50px] 2xl:text-[66.6px]text-transparent font-[650] mt-[118px]"
         }
       >
-        We are ++hellohello.
+        I like to develop user interfaces
       </h2>
       <h2
         className={
@@ -37,7 +36,7 @@ const About = ({ animacion1, animacion2 }) => {
             : "text-[29px] md:text-[44.4px] xl:text-[50px] 2xl:text-[66.6px] text-transparent font-[300] mt-[20px] "
         }
       >
-        We design for the people.
+        Websites with great user experience
       </h2>
       <hr className="bg-white px-[120px] mt-[90px] md:mt-[172px]"></hr>
     </div>
