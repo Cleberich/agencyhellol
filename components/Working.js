@@ -103,32 +103,6 @@ const Working = () => {
       const dato = y / 100;
       setBack(dato);
       obtener();
-
-      // if (hora == 13) {
-      //   setMvdr(1);
-      // } else if (hora == 14) {
-      //   setMvdr(2);
-      // } else if (hora == 15) {
-      //   setMvdr(3);
-      // } else if (hora == 16) {
-      //   setMvdr(4);
-      // } else if (hora == 17) {
-      //   setMvdr(5);
-      // } else if (hora == 18) {
-      //   setMvdr(6);
-      // } else if (hora == 19) {
-      //   setMvdr(7);
-      // } else if (hora == 20) {
-      //   setMvdr(240);
-      // } else if (hora == 11) {
-      //   setMvdr(9);
-      // } else if (hora == 22) {
-      //   setMvdr(10);
-      // } else if (hora == 23) {
-      //   setMvdr(11);
-      // } else if (hora == 24) {
-      //   setMvdr(350);
-      // }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -136,7 +110,7 @@ const Working = () => {
   useEffect(() => {}, [mvd]);
   return (
     <>
-      <div className='bg-[url("/img/mundo.png")] bg-cover h-[200vh] md:h-screen'>
+      <div className='bg-[url("/img/mundo.png")] bg-cover h-[50vh] md:h-screen'>
         <h2 className="text-white text-[41.8px] 2xl:text-[63px]  font-bold text-center pt-[100px] md:pt-[197px]">
           Actions <br className="visible md:hidden"></br>
         </h2>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Clientes = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3  bg-[#0E141B] bg-center pt-[400px] md:pt-0">
+    <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3  bg-[#0E141B] bg-center pt-[450px] md:pt-0">
       <div id="work">
         <img src="clientes/31.gif" />
       </div>
