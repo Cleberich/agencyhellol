@@ -1,36 +1,76 @@
-import React from "react";
+import { useState } from "react";
+import Modal from "./Modal";
 
 const Clientes = () => {
+  const [modal, setmodal] = useState(false);
+  const [hover, sethover] = useState(false);
+  const efectoHover = () => {
+    sethover(true);
+  };
+  const efectoSalir = () => {
+    sethover(false);
+  };
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3  bg-[#0E141B] bg-center pt-[450px] md:pt-0">
-      <div id="work">
-        <img src="clientes/31.gif" />
-      </div>
-      <div>
-        <img src="clientes/22.gif" />
-      </div>
-      <div>
-        <img src="clientes/25.gif" />
-      </div>
-      <div>
-        <img src="clientes/24.gif" />
-      </div>
-      <div>
-        <img src="clientes/23.gif" />
-      </div>
-      <div>
-        <img src="clientes/26.gif" />
-      </div>
-      <div>
-        <img src="clientes/27.gif" />
-      </div>
-      <div>
-        <img src="clientes/28.gif" />
-      </div>
-      <div>
-        <img src="clientes/29.gif" />
-      </div>
-      <div>
+    <>
+      <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3  bg-[#0E141B] bg-center pt-[450px] md:pt-0">
+        <div id="work" onMouseOver={efectoHover} onMouseOut={efectoSalir}>
+          <img
+            src="clientes/xeptiva.webp"
+            className="hover:scale-[1.01] hover:transition-all ease-in"
+          />
+          {/* <div className=" grid align-middle place-items-center py-2 px-3 rounded-md bg-white relative -mt-[40%] mx-[30%]">
+            <button>See more</button>
+          </div> */}
+        </div>
+        <div>
+          <img
+            src="clientes/daniel.webp"
+            className="hover:scale-[1.01] hover:transition-all ease-in"
+          />
+        </div>
+        <div>
+          <img
+            src="clientes/ecommerce.webp"
+            className="hover:scale-[1.01] hover:transition-all ease-in"
+          />
+        </div>
+        <div>
+          <img
+            src="clientes/shop.webp"
+            className="hover:scale-[1.01] hover:transition-all ease-in"
+          />
+        </div>
+        <div>
+          <img
+            src="clientes/paito.webp"
+            className="hover:scale-[1.01] hover:transition-all ease-in"
+          />
+        </div>
+        <div>
+          <img
+            src="clientes/mercadolibre.webp"
+            className="hover:scale-[1.01] hover:transition-all ease-in"
+          />
+        </div>
+        <div>
+          <img
+            src="clientes/innovar.webp"
+            className="hover:scale-[1.01] hover:transition-all ease-in"
+          />
+        </div>
+        <div>
+          <img
+            src="clientes/actitud.webp"
+            className="hover:scale-[1.01] hover:transition-all ease-in"
+          />
+        </div>
+        <div>
+          <img
+            src="clientes/ciber.webp"
+            className="hover:scale-[1.01] hover:transition-all ease-in"
+          />
+        </div>
+        {/* <div>
         <img src="clientes/30.gif" />
       </div>
       <div>
@@ -54,8 +94,10 @@ const Clientes = () => {
             />
           </svg>
         </h2>
+      </div> */}
+        <Modal setmodal={setmodal} />
       </div>
-    </div>
+    </>
   );
 };
 
