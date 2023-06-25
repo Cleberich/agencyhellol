@@ -1,4 +1,4 @@
-const Nav = ({ abrir, menu }) => {
+const Nav = ({ menu }) => {
   return (
     <div className="bg-transparent relative top-0 z-50 ">
       <nav className=" flex justify-between">

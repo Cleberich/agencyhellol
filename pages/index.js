@@ -60,11 +60,11 @@ export default function Home() {
     window.addEventListener("scroll", showAnimation3);
   }, [animacion1, animacion2, animacion3]);
 
-  const abrir = () => {
-    setTimeout(() => {
-      setMenu(true);
-    }, 400);
-  };
+  // const abrir = () => {
+  //   setTimeout(() => {
+  //     setMenu(true);
+  //   }, 400);
+  // };
   const cerrar = () => {
     setActivar(true);
     setTimeout(() => {
@@ -217,7 +217,7 @@ export default function Home() {
       )}
       <>
         <body>
-          <Nav abrir={abrir} menu={menu} />
+          <Nav menu={menu} />
           <Portada menu={menu} animacion={animacion} idioma={idioma} />
           <div className="bg-[#0E141B] flex pl-[120px] 2xl:pl-[177px] gap-5 -mt-[100px] lg:-mt-[60px] show">
             <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
