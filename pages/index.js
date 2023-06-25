@@ -76,7 +76,7 @@ export default function Home() {
   const mostrar = () => {
     setTimeout(() => {
       setSaludo(true);
-    }, 2000);
+    }, 4000);
     setTimeout(() => {
       setSaludo(false);
     }, 7000);

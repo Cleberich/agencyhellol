@@ -1,7 +1,7 @@
 const Clientes = () => {
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3 grid-rows-5  bg-[#0F121C] bg-center pt-[450px] md:pt-0">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-3 grid-rows-5  bg-[#0F121C] bg-center pt-[550px] md:pt-0">
         <div className="flip-card ">
           <div className="flip-card-inner w-full">
             <div className="flip-card-front">
