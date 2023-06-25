@@ -1,18 +1,18 @@
 import React from "react";
 
-const What = ({ animacion3 }) => {
+const What = ({ animacion3, idioma }) => {
   return (
     <div
-      className="bg-[#0E141B] h-screen px-8 md:px-[120px] 2xl:px-[177px] py-[118px] z-40"
+      className="bg-[#0F121C] h-screen px-8 md:px-[120px] 2xl:px-[177px] py-[118px] z-40"
       id="services"
     >
       <h2 className="text-[9px] 2xl:text-[12px] font-bold uppercase  text-[#fa3636]">
-        Skill
+        {idioma == "ingles" ? "Skill" : "Habilidades"}
       </h2>
       <div className="flex justify-between about">
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
-            Desing
+            {idioma == "ingles" ? "Desing" : "Diseño"}
           </h2>
           <ul className="mt-[29px]">
             <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
@@ -27,9 +27,13 @@ const What = ({ animacion3 }) => {
               />{" "}
               CSS
             </li>
-            <li className="text-[#999999] text-[21px] font-light mt-[12px flex gap-2">
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
               <img src="/img/js.png" alt="javascript" className="w-8 h-8" />{" "}
               Javascript
+            </li>
+            <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
+              <img src="/img/figma.png" alt="javascript" className="w-8 h-8" />{" "}
+              Figma
             </li>
             <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
               <img src="/img/react.png" alt="react" className="w-8 h-8" /> React
@@ -46,7 +50,7 @@ const What = ({ animacion3 }) => {
         </div>
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
-            Databases
+            {idioma == "ingles" ? "Databases" : "Base de datos"}
           </h2>
           <ul className="mt-[29px]">
             <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
@@ -65,7 +69,7 @@ const What = ({ animacion3 }) => {
         </div>
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
-            Styles
+            {idioma == "ingles" ? "Styles" : "Estilos"}
           </h2>
           <ul className="mt-[29px]">
             <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">
@@ -92,7 +96,7 @@ const What = ({ animacion3 }) => {
         </div>
         <div className={animacion3 ? "fade-in-bottom" : "opacity-0"}>
           <h2 className="text-white font-bold text-[42.5px] 2xl:text-[63.4px] mt-[26px]">
-            Others
+            {idioma == "ingles" ? "Others" : "Otros"}
           </h2>
           <ul className="mt-[29px]">
             <li className="text-[#999999] text-[21px] font-light mt-[12px] flex gap-2">

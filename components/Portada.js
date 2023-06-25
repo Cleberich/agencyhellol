@@ -1,6 +1,6 @@
-const Portada = ({ menu, animacion }) => {
+const Portada = ({ menu, animacion, idioma }) => {
   return (
-    <div className="bg-[#0E141B] h-[80vh] md:h-screen -mt-[75px] ">
+    <div className="bg-[#0F121C] h-[80vh] md:h-screen -mt-[75px] ">
       <div className="flex justify-end  z-0 videoPortada">
         <video
           autoPlay
@@ -8,8 +8,8 @@ const Portada = ({ menu, animacion }) => {
           muted
           playsInline
           webkit-playsinline="true"
-          className="w-[80%] md:w-[60%] slide-in-bottom desktop"
-          src="/videos/hhh-video.mp4"
+          className="w-[80%] md:w-[100%] slide-in-bottom desktop"
+          src="/videos/vid.mp4"
         />
         <video
           autoPlay
@@ -29,7 +29,7 @@ const Portada = ({ menu, animacion }) => {
               : "text-white text-[97.3px] leading-[97px] font-bold absolute top-[255px] pl-8 md:pl-[120px] swing-in-bottom-fwdd tituloDesktop z-10"
           }
         >
-          I'm Front-end <br></br>
+          {idioma == "ingles" ? " I'm" : "Soy"} Front-end <br></br>
           <span className={animacion && "hvr-sweep-to-right"} id="title">
             Developer
           </span>
@@ -41,7 +41,7 @@ const Portada = ({ menu, animacion }) => {
               : "text-white text-[42px]  leading-[40px]  font-bold absolute top-[130px]  pl-8 tituloCelu "
           }
         >
-          I'm Front-end <br></br>
+          {idioma == "ingles" ? " I'm" : "Soy"} Front-end <br></br>
           <span className={animacion && "hvr-sweep-to-right"} id="title">
             Developer
           </span>
@@ -49,13 +49,25 @@ const Portada = ({ menu, animacion }) => {
       </div>
       <div>
         <nav className="inline-block  -rotate-90 text-red-500 absolute right-5 mt-12">
-          <a href="#" className="mx-1 text-[12px]">
+          <a
+            href="https://www.instagram.com/cleber_developer/?hl=es-la"
+            target="_blank"
+            className="mx-1 text-[12px]"
+          >
             IG
           </a>
-          <a href="#" className="mx-1 text-[12px]">
+          <a
+            href="https://www.linkedin.com/in/cleber-desarrollador-web"
+            target="_blank"
+            className="mx-1 text-[12px]"
+          >
             IN
           </a>
-          <a href="#" className="mx-1 text-[12px]">
+          <a
+            href="https://www.linkedin.com/in/cleber-desarrollador-web"
+            target="_blank"
+            className="mx-1 text-[12px]"
+          >
             TW
           </a>
         </nav>

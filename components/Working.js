@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-const Working = () => {
+const Working = ({ idioma }) => {
   const [back, setBack] = useState(100);
   const [mvd, setMvd] = useState();
   const [mvdr, setMvdr] = useState(0);
@@ -15,7 +15,7 @@ const Working = () => {
       hora = 12;
       setMvdr(0);
     }
-    //  Ny}
+
     if (hora == 13) {
       hora = 1;
       setMvdr(30);
@@ -112,27 +112,34 @@ const Working = () => {
     <>
       <div className='bg-[url("/img/mundo.png")] bg-cover h-[50vh] md:h-screen'>
         <h2 className="text-white text-[41.8px] 2xl:text-[63px]  font-bold text-center pt-[100px] md:pt-[197px]">
-          Actions <br className="visible md:hidden"></br>
+          {idioma == "ingles" ? " Actions" : "Acciones"}{" "}
+          <br className="visible md:hidden"></br>
         </h2>
         <div className="flex justify-center mt-4">
-          <a className="py-3 rounded-lg text-center bg-[#FC3E3F] hover:bg-black w-64 text-white">
-            Dowload resume
+          <a
+            href="https://firebasestorage.googleapis.com/v0/b/paito-601ff.appspot.com/o/Curriculum%20developer.pdf?alt=media&token=6262556d-24c6-47b4-9116-19adf27b480a"
+            target="_blank"
+            className="py-3 rounded-lg text-center bg-[#FC3E3F] hover:bg-black w-64 text-white"
+          >
+            {idioma == "ingles" ? "Download resume" : "Descargar curriculum"}
           </a>
         </div>
         <div className="flex justify-center mt-4">
           <a
             href="https://github.com/Cleberich"
+            target="_blank"
             className="py-3 rounded-lg text-center bg-[#FC3E3F] hover:bg-black w-64 text-white"
           >
-            Visit Github
+            {idioma == "ingles" ? "Visit Github" : "Visitar Github"}
           </a>
         </div>
         <div className="flex justify-center mt-4">
           <a
             href="https://www.linkedin.com/in/cleber-desarrollador-web/"
+            target="_blank"
             className="py-3 rounded-lg bg-[#FC3E3F] text-center hover:bg-black w-64 text-white"
           >
-            Visit Linkedin
+            {idioma == "ingles" ? "  Visit Linkedin" : "Visitar Linkedin"}
           </a>
         </div>
       </div>

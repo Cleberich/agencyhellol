@@ -8,7 +8,6 @@ import What from "../components/What";
 import Clientes from "../components/Clientes";
 import Working from "../components/Working";
 import Footer from "../components/Footer";
-import Link from "next/link";
 
 export default function Home() {
   const [animacion, setAnimacion] = useState(false);
@@ -18,6 +17,7 @@ export default function Home() {
   const [menu, setMenu] = useState(false);
   const [ads, setAds] = useState(false);
   const [activar, setActivar] = useState(false);
+  const [idioma, setIdioma] = useState("ingles");
 
   useEffect(() => {
     const showAnimation = () => {
@@ -205,30 +205,39 @@ export default function Home() {
       <>
         <body>
           <Nav abrir={abrir} menu={menu} />
-          <Portada menu={menu} animacion={animacion} />
+          <Portada menu={menu} animacion={animacion} idioma={idioma} />
           <div className="bg-[#0E141B] flex pl-[120px] 2xl:pl-[177px] gap-5 -mt-[100px] lg:-mt-[60px] show">
             <div className="bg-[#fa3636] relative w-[2px] h-[60px]"></div>
             <h2
               className="text-[9px] 2xl:text-[12px] uppercase font-[600] text-[#fff] "
               id="people"
             >
-              Show me more
+              {idioma == "ingles" ? " Show me more" : "Ver más"}
             </h2>
           </div>
-          <About animacion1={animacion1} animacion2={animacion2} />
-          <What animacion3={animacion3} />
+          <About
+            animacion1={animacion1}
+            animacion2={animacion2}
+            idioma={idioma}
+          />
+          <What animacion3={animacion3} idioma={idioma} />
           <Clientes />
-          <Working />
+          <Working idioma={idioma} id="work" />
         </body>
         <footer>
-          <Footer />
+          <Footer idioma={idioma} />
         </footer>
         {ads ? (
           <div className="bg-[#000] fixed bottom-0 h-12 w-full rounded-t-2xl  flex justify-center">
             <h2 className="text-white font-semibold mx-6 text-[12px] my-auto text-center">
-              👋 Thanks for visit my Design{" "}
+              👋{" "}
+              {idioma == "ingles"
+                ? "Thanks for visit my portfolio"
+                : "Gracias por visitar mi portafolio"}
               <a href="tel:091411527" className="text-center text-[#FB3D3D]">
-                Click here for contact me
+                {idioma == "ingles"
+                  ? " Click here for contact me"
+                  : "Click aqui para contactarme"}
               </a>
             </h2>
           </div>

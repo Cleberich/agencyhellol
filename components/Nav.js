@@ -9,8 +9,7 @@ const Nav = ({ abrir, menu }) => {
           </a>
         </div>
         <div className="text-white  pt-[29px] mr-[36px]">
-          <button>
-            {" "}
+          <button onClick={() => abrir()}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
