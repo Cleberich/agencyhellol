@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "animate.css";
 
 import Head from "next/head";
 import Portada from "../components/Portada";
@@ -14,6 +15,7 @@ export default function Home() {
   const [animacion1, setAnimacion1] = useState(false);
   const [animacion2, setAnimacion2] = useState(false);
   const [animacion3, setAnimacion3] = useState(false);
+  const [saludo, setSaludo] = useState(false);
   const [menu, setMenu] = useState(false);
   const [ads, setAds] = useState(false);
   const [activar, setActivar] = useState(false);
@@ -71,6 +73,17 @@ export default function Home() {
     }, 800);
   };
 
+  const mostrar = () => {
+    setTimeout(() => {
+      setSaludo(true);
+    }, 2000);
+    setTimeout(() => {
+      setSaludo(false);
+    }, 7000);
+  };
+  useEffect(() => {
+    mostrar();
+  }, []);
   setTimeout(() => {
     setAds(true);
   }, 25000);
@@ -251,6 +264,16 @@ export default function Home() {
             </h2>
           </div>
         )}
+
+        <div
+          className={
+            saludo
+              ? "fixed top-5 right-5 bg-white text-blue-900 p-3 rounded-md animate__animated animate__backInRight cursor-pointer"
+              : "fixed top-5 right-5 bg-white text-blue-900 p-3 rounded-md animate__animated animate__backOutRight cursor-pointer"
+          }
+        >
+          <h3>Hi! Welcome 👋</h3>
+        </div>
       </>
     </>
   );

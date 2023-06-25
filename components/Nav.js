@@ -8,7 +8,7 @@ const Nav = ({ abrir, menu }) => {
             <img src="/img/logito.png" className="w-40 mp-12 ml-12 " />{" "}
           </a>
         </div>
-        <div className="text-white  pt-[29px] mr-[36px]">
+        {/* <div className="text-white  pt-[29px] mr-[36px]">
           <button onClick={() => abrir()}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const Nav = ({ abrir, menu }) => {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
       </nav>
     </div>
   );
