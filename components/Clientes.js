@@ -10,11 +10,19 @@ const Clientes = () => {
             <div className="flip-card-back bg-blue-600 pt-3 md:pt-12">
               <h1>Website </h1>
               <div>
-                <h2>Technology</h2>
                 <div className="flex justify-center gap-3 mb-3">
-                  <img src="img/next.svg" width={40} />
-                  <img src="img/firebase.png" width={40} />
-                  <img src="img/tail.png" width={40} />
+                  <img
+                    src="img/next.svg"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/firebase.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/tail.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
                 </div>
               </div>
               <a
@@ -35,11 +43,19 @@ const Clientes = () => {
             <div className="flip-card-back bg-purple-900 pt-3 md:pt-12">
               <h1>eCommerce</h1>
               <div>
-                <h2>Technology</h2>
                 <div className="flex justify-center gap-3 mb-3">
-                  <img src="img/next.svg" width={40} />
-                  <img src="img/firebase.png" width={40} />
-                  <img src="img/tail.png" width={40} />
+                  <img
+                    src="img/next.svg"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/firebase.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/tail.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
                 </div>
               </div>
               <a
@@ -51,11 +67,6 @@ const Clientes = () => {
               </a>
             </div>
           </div>
-          <div className="flip-card-back">
-            <h1>John Doe</h1>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
-          </div>
         </div>
         <div className="flip-card ">
           <div className="flip-card-inner w-full">
@@ -65,11 +76,19 @@ const Clientes = () => {
             <div className="flip-card-back bg-pink-600 pt-3 md:pt-12">
               <h1>eCommerce</h1>
               <div>
-                <h2>Technology</h2>
                 <div className="flex justify-center gap-3 mb-3">
-                  <img src="img/react.png" width={50} />
-                  <img src="img/firebase.png" width={40} />
-                  <img src="img/bootstrap.png" width={40} />
+                  <img
+                    src="img/react.png"
+                    className="w-[25px]  md:w-[50px] md:h-[50px]"
+                  />
+                  <img
+                    src="img/firebase.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/bootstrap.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
                 </div>
               </div>
               <a
@@ -90,11 +109,19 @@ const Clientes = () => {
             <div className="flip-card-back bg-purple-600 pt-3 md:pt-12">
               <h1>eCommerce</h1>
               <div>
-                <h2>Technology</h2>
                 <div className="flex justify-center gap-3 mb-3">
-                  <img src="img/js.png" width={40} />
-                  <img src="img/html5.png" width={40} />
-                  <img src="img/bootstrap.png" width={40} />
+                  <img
+                    src="img/js.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/html5.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/bootstrap.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
                 </div>
               </div>
               <a
@@ -115,10 +142,15 @@ const Clientes = () => {
             <div className="flip-card-back bg-gray-500 pt-3 md:pt-12">
               <h1>Landing page</h1>
               <div>
-                <h2>Technology</h2>
                 <div className="flex justify-center gap-3 mb-3">
-                  <img src="img/react.png" width={40} />
-                  <img src="img/styled.png" width={40} />
+                  <img
+                    src="img/react.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/styled.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
                 </div>
               </div>
               <a
@@ -139,11 +171,19 @@ const Clientes = () => {
             <div className="flip-card-back bg-yellow-500 pt-3 md:pt-12">
               <h1>App</h1>
               <div>
-                <h2>Technology</h2>
                 <div className="flex justify-center gap-3 mb-3">
-                  <img src="img/nextjs.png" width={40} />
-                  <img src="img/firebase.png" width={40} />
-                  <img src="img/tail.png" width={40} />
+                  <img
+                    src="img/nextjs.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/firebase.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/tail.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
                 </div>
               </div>
               <a
@@ -164,12 +204,23 @@ const Clientes = () => {
             <div className="flip-card-back bg-pink-500 pt-3 md:pt-12">
               <h1>Realstate</h1>
               <div>
-                <h2>Technology</h2>
                 <div className="flex justify-center gap-3 mb-3">
-                  <img src="img/nextjs.png" width={40} />
-                  <img src="img/firebase.png" width={40} />
-                  <img src="img/node.png" width={40} />
-                  <img src="img/tail.png" width={40} />
+                  <img
+                    src="img/nextjs.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/firebase.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/node.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/tail.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
                 </div>
               </div>
               <a
@@ -190,12 +241,23 @@ const Clientes = () => {
             <div className="flip-card-back bg-orange-500 pt-3 md:pt-12">
               <h1>Landing</h1>
               <div>
-                <h2>Technology</h2>
                 <div className="flex justify-center gap-3 mb-3">
-                  <img src="img/nextjs.png" width={40} />
-                  <img src="img/firebase.png" width={40} />
-                  <img src="img/node.png" width={40} />
-                  <img src="img/tail.png" width={40} />
+                  <img
+                    src="img/nextjs.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/firebase.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/node.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
+                  <img
+                    src="img/tail.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
                 </div>
               </div>
               <a
@@ -215,11 +277,13 @@ const Clientes = () => {
               <img src="clientes/ciber.webp" className="" />
             </div>
             <div className="flip-card-back bg-red-500 pt-3 md:pt-12">
-              <h1>Landing</h1>
+              <h1>eCommerce</h1>
               <div>
-                <h2>Technology</h2>
                 <div className="flex justify-center gap-3 mb-3">
-                  <img src="img/wp.png" width={40} />
+                  <img
+                    src="img/wp.png"
+                    className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
+                  />
                 </div>
               </div>
               <a
