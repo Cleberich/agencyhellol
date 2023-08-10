@@ -1,4 +1,5 @@
 import { formatearFecha } from "@/helpers/formatearFecha";
+import Head from "next/head";
 import { useState } from "react";
 export default function calcular() {
   const [modal, setmodal] = useState(true);
@@ -46,6 +47,12 @@ export default function calcular() {
 
   return (
     <>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+      </Head>
       <div className="bg-[#FFFFFF] h-screen w-full">
         <div className="p-5">
           <h1 className="font-[500] text-md">Bienvenido</h1>
@@ -53,7 +60,7 @@ export default function calcular() {
             a tu calculadora
           </h1>
         </div>
-        <div className="w-[360px] mx-auto h-52 bg-[#0B0A0D] shadow-md rounded-3xl">
+        <div className="w-[360px] mx-auto block md:hidden h-52 bg-[#0B0A0D] shadow-md rounded-3xl">
           <h2 className="font-[500] px-5 pt-5 text-md text-[#626163]">
             {fecha}
           </h2>
@@ -64,9 +71,8 @@ export default function calcular() {
             ${liquido}
           </h2>
         </div>
-        <main className="flex justify-start overflow-x-scroll gap-2 px-[10px]">
-          {" "}
-          <div className="min-w-[360px] mt-3 mx-auto h-52 bg-[#248e1d] shadow-md rounded-3xl">
+        <main className="flex justify-start md:justify-center overflow-x-scroll gap-2 px-[10px]">
+          <div className="min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-52 bg-[#248e1d] shadow-md rounded-3xl">
             <h2 className="font-[500] px-5 pt-5 text-md text-[#626163]">
               {fecha}
             </h2>
@@ -75,7 +81,7 @@ export default function calcular() {
               ${nominal}
             </h2>
           </div>
-          <div className="min-w-[360px] mt-3 mx-auto h-52 bg-[#c80303] shadow-md rounded-3xl">
+          <div className="min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-52 bg-[#c80303] shadow-md rounded-3xl">
             <h2 className="font-[500] px-5 pt-5 text-md text-[#626163]">
               {fecha}
             </h2>
@@ -86,9 +92,20 @@ export default function calcular() {
               ${descuentos}
             </h2>
           </div>
+          <div className="bg-[#0B0A0D] min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-52 md:block hidden shadow-md rounded-3xl">
+            <h2 className="font-[500] px-5 pt-5 text-md text-[#626163]">
+              {fecha}
+            </h2>
+            <h2 className="font-[500] px-5 text-2xl text-[#ffffff]">
+              Sueldo liquido a cobrar
+            </h2>
+            <h2 className="font-[500] px-5 text-5xl text-left text-[#ffffff] pt-12">
+              ${liquido}
+            </h2>
+          </div>
         </main>
 
-        <div className="text-xs font-medium text-center text-gray-500  dark:text-gray-400 dark:border-gray-700">
+        <div className="text-xs md:text-lg font-medium text-center text-gray-500  dark:text-gray-400 dark:border-gray-700">
           <ul className="flex flex-wrap -mb-px">
             <li className="mr-2">
               <button
@@ -131,7 +148,7 @@ export default function calcular() {
 
         {active == "Descuentos" && (
           <div className="relative overflow-x-auto pb-24">
-            <table className="w-full text-xs text-left text-gray-500">
+            <table className="w-full text-xs md:text-lg text-left text-gray-500">
               <tbody>
                 <tr className="bg-white border-b flex justify-between">
                   <th
@@ -175,7 +192,7 @@ export default function calcular() {
         )}
         {active == "Ingresos" && (
           <div className="relative overflow-x-auto pb-24">
-            <table className="w-full text-xs text-left text-gray-500">
+            <table className="w-full text-xs md:text-lg text-left text-gray-500">
               <tbody>
                 <tr className="bg-white border-b flex justify-between">
                   <th
@@ -228,7 +245,7 @@ export default function calcular() {
         )}
         {active == "A cobrar" && (
           <div className="relative overflow-x-auto pb-24">
-            <table className="w-full text-xs text-left text-gray-500">
+            <table className="w-full text-xs md:text-lg text-left text-gray-500">
               <tbody>
                 <tr className="bg-white border-b flex justify-between">
                   <th
@@ -299,7 +316,7 @@ export default function calcular() {
           aria-hidden="true"
           className="fixed overlaycss bottom-24 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
         >
-          <div className="relative  w-full max-w-md max-h-full ">
+          <div className="relative md:mt-20 md:mx-auto w-full max-w-xl max-h-full ">
             <div className="relative bg-white rounded-lg shadow ">
               <div className="px-6 py-6 lg:px-8">
                 <h3 className="mb-4 text-xl font-medium text-gray-900 ">
@@ -308,74 +325,74 @@ export default function calcular() {
                 <main className="">
                   <main className="md:grid md:grid-cols-3 grid grid-cols-1 place-content-center gap-2 ">
                     <div>
-                      <label className="block mb-1 text-xs font-medium text-gray-900 ">
+                      <label className="block mb-1 text-xs md:text-lg font-medium text-gray-900 ">
                         Sueldo base
                       </label>
                       <input
                         type="tel"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                         placeholder="Ingresa tu sueldo"
                         onChange={(e) => setsu(e.target.value)}
                       />
                     </div>
                     <div>
-                      <label className="block mb-1 text-xs font-medium text-gray-900 ">
+                      <label className="block mb-1 text-xs md:text-lg font-medium text-gray-900 ">
                         Horas Extras
                       </label>
                       <input
                         type="text"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                         placeholder="Cantidad de horas"
                         onChange={(e) => sethe(e.target.value)}
                       />
                     </div>
                     <div>
-                      <label className="block mb-1 text-xs font-medium text-gray-900 ">
+                      <label className="block mb-1 text-xs md:text-lg font-medium text-gray-900 ">
                         Horas Nocturnas
                       </label>
                       <input
                         type="text"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                         placeholder="Cantidad de horas"
                         onChange={(e) => sethn(e.target.value)}
                       />
                     </div>
                     <div>
-                      <label className="block mb-1 text-xs font-medium text-gray-900 ">
+                      <label className="block mb-1 text-xs md:text-lg font-medium text-gray-900 ">
                         Faltas
                       </label>
                       <input
                         type="number"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                         placeholder="Cantidad de faltas"
                         onChange={(e) => setfa(e.target.value)}
                       />
                     </div>
                     <div>
-                      <label className="block mb-1 text-xs font-medium text-gray-900 ">
+                      <label className="block mb-1 text-xs md:text-lg font-medium text-gray-900 ">
                         Libres trabajados
                       </label>
                       <input
                         type="number"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                         placeholder="Cantidad"
                         onChange={(e) => setlt(e.target.value)}
                       />
                     </div>
                     <div>
-                      <label className="block mb-1 text-xs font-medium text-gray-900 ">
+                      <label className="block mb-1 text-xs md:text-lg font-medium text-gray-900 ">
                         Feriados
                       </label>
                       <input
                         type="number"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-xs md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                         placeholder="Feriados trabajados"
                         onChange={(e) => setfe(e.target.value)}
                       />
                     </div>
                     <div>
                       {" "}
-                      <label className="block mb-1 text-xs font-medium text-gray-900 ">
+                      <label className="block mb-1 text-xs md:text-lg font-medium text-gray-900 ">
                         Tienes hijos
                       </label>
                       <select
