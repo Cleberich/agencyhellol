@@ -174,21 +174,21 @@ export default function sueldo() {
     //   </section>
     // </div>
     <div className="bg-[#030003] h-screen w-full">
-      <div className="h-[60vh]">
-        <img src="/img/animacion.gif" className="w-52 mx-auto pt-[350px]" />
+      <div className="h-[100vh]">
+        <img src="/img/vec.png" className="w-52 mx-auto pt-[150px]" />
       </div>
       <div className="bg-[#FEFEFE] w-full h-[40vh] rounded-t-3xl fixed bottom-0">
-        <h1 className="font-semibold text-3xl px-10 pt-12">Administrá tu</h1>
-        <h1 className="font-semibold text-[#B9B9B9] text-5xl px-10">Sueldo</h1>
-        <h1 className="font-semibold text-[#030003] text-xs pt-2 px-10">
+        <h1 className="font-semibold text-3xl px-5 pt-12">Administrá tu</h1>
+        <h1 className="font-semibold text-[#B9B9B9] text-5xl px-5">Sueldo</h1>
+        <h1 className="font-semibold text-[#030003] text-xs pt-2 px-5">
           Carga tus horas y obtene el resumen de tus ingresos
         </h1>
-        <div className="flex justify-between px-10 fixed bottom-5 w-full">
+        <div className="flex justify-between px-5 fixed bottom-5 w-full">
           {" "}
           <h1 className="font-semibold text-3xl ">Comenzar</h1>
           <Link
             href="/calcular"
-            className="bg-[#030003] -mt-2 p-4 rounded-full"
+            className="bg-[#030003] hover:bg-gray-800 -mt-2 p-4 rounded-full"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
