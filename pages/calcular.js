@@ -60,7 +60,7 @@ export default function calcular() {
             a tu calculadora
           </h1>
         </div>
-        <div className="w-[360px] mx-auto block md:hidden h-52 bg-[#0B0A0D] shadow-md rounded-3xl">
+        <div className="w-[360px] mx-auto block md:hidden h-44 md:h-52 bg-[#0B0A0D] shadow-md rounded-3xl">
           <h2 className="font-[500] px-5 pt-5 text-md text-[#626163]">
             {fecha}
           </h2>
@@ -72,7 +72,7 @@ export default function calcular() {
           </h2>
         </div>
         <main className="flex justify-start md:justify-center overflow-x-scroll gap-2 px-[10px]">
-          <div className="min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-52 bg-[#248e1d] shadow-md rounded-3xl">
+          <div className="min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-44 md:h-52 bg-[#248e1d] shadow-md rounded-3xl">
             <h2 className="font-[500] px-5 pt-5 text-md text-[#626163]">
               {fecha}
             </h2>
@@ -81,7 +81,7 @@ export default function calcular() {
               ${nominal}
             </h2>
           </div>
-          <div className="min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-52 bg-[#c80303] shadow-md rounded-3xl">
+          <div className="min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-44 md:h-52 bg-[#c80303] shadow-md rounded-3xl">
             <h2 className="font-[500] px-5 pt-5 text-md text-[#626163]">
               {fecha}
             </h2>
@@ -92,7 +92,7 @@ export default function calcular() {
               ${descuentos}
             </h2>
           </div>
-          <div className="bg-[#0B0A0D] min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-52 md:block hidden shadow-md rounded-3xl">
+          <div className="bg-[#0B0A0D] min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-44 md:h-52 md:block hidden shadow-md rounded-3xl">
             <h2 className="font-[500] px-5 pt-5 text-md text-[#626163]">
               {fecha}
             </h2>
