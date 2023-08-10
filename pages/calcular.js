@@ -2,7 +2,7 @@ import { formatearFecha } from "@/helpers/formatearFecha";
 import Head from "next/head";
 import { useState } from "react";
 export default function calcular() {
-  const [modal, setmodal] = useState(true);
+  const [modal, setmodal] = useState(false);
   const fechaAdaptada = new Date();
   const fecha = formatearFecha(fechaAdaptada);
   const [su, setsu] = useState(0);
@@ -71,7 +71,7 @@ export default function calcular() {
             ${liquido}
           </h2>
         </div>
-        <main className="flex justify-start md:justify-center overflow-x-scroll gap-2 px-[10px]">
+        <main className="flex justify-start md:justify-center overflow-x-scroll gap-2 px-[11px]">
           <div className="min-w-[360px] md:min-w-[450px] mt-3 mx-auto h-48 md:h-52 bg-[#248e1d] shadow-md rounded-3xl">
             <h2 className="font-[500] px-5 pt-5 text-md text-[#626163]">
               {fecha}
