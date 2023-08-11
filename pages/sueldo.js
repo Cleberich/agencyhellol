@@ -178,7 +178,7 @@ export default function sueldo() {
         <img src="/img/vec.png" className="w-52 mx-auto pt-[150px]" />
       </div>
       <div className="bg-[#FEFEFE] w-full h-[40vh] rounded-t-3xl fixed bottom-0">
-        <h1 className="font-semibold text-3xl px-5 pt-12">Administrá tu</h1>
+        <h1 className="font-semibold text-3xl px-5 pt-12">Consulta tu</h1>
         <h1 className="font-semibold text-[#B9B9B9] text-5xl px-5">Sueldo</h1>
         <h1 className="font-semibold text-[#030003] text-xs pt-2 px-5">
           Carga tus horas y obtene el resumen de tus ingresos
