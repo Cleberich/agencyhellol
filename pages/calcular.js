@@ -21,7 +21,7 @@ export default function calcular() {
   const porDia = Math.round(sueldoBase / 30);
   const faltas = Math.round(porDia * fa);
   const hora = Math.round(porDia / 8);
-  const horaNocturna = Math.round(hn * 0.2);
+  const horaNocturna = Math.round(hora * 0.2 * hn);
   const horaExtra = Math.round(Number(hora * 2 * he));
   const libretrabajado = Math.round(porDia * lt);
   const feriadotrabajado = fe * porDia;
@@ -37,6 +37,9 @@ export default function calcular() {
   const frl = Math.round((nominal * 0.1) / 100);
   const descuentos = Math.round(bps + fonasa + frl);
   const liquido = Math.ceil(nominal - descuentos);
+  console.log(hora);
+  console.log(horaNocturna);
+  console.log(hora + horaNocturna);
 
   const consultando = () => {
     setSpinner(true);
