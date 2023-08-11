@@ -185,7 +185,9 @@ export default function sueldo() {
         </h1>
         <div className="flex justify-between px-5 fixed bottom-5 w-full">
           {" "}
-          <h1 className="font-semibold text-3xl ">Comenzar</h1>
+          <Link href="/calcular">
+            <h1 className="font-semibold text-3xl ">Comenzar</h1>
+          </Link>
           <Link
             href="/calcular"
             className="bg-[#030003] hover:bg-gray-800 -mt-2 p-4 rounded-full"
