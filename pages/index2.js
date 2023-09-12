@@ -48,7 +48,7 @@ export default function index2() {
               className="w-[90%] mx-auto rounded-md"
               autoPlay
               playsInline
-              loop
+              muted
             ></video>
           </div>
           <div>
