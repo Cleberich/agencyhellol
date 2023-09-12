@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { db } from "@/services/firebase";
+import { addDoc, collection } from "firebase/firestore";
+import { formatearFecha } from "@/helpers/formatearFecha";
 
 const Modal = ({ setmodal }) => {
   const [nombre, setnombre] = useState(null);
@@ -8,15 +11,20 @@ const Modal = ({ setmodal }) => {
   const [correo, setcorreo] = useState(null);
   const route = useRouter();
 
-  const handlesubmit = (e) => {
+  const handlesubmit = async (e) => {
     e.preventDefault();
 
     try {
       console.log(nombre, telefono, correo);
+
+      const fecha = new Date();
+      const collRef = collection(db, "keymex");
+      const datos = { nombre, correo, telefono, fecha };
+      await addDoc(collRef, datos);
     } catch (error) {
       console.log(error);
     } finally {
-      route.push("/");
+      route.push("/gracias");
     }
   };
   return (
@@ -26,7 +34,7 @@ const Modal = ({ setmodal }) => {
       aria-hidden="true"
       className="fixed overlaycss top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
     >
-      <div className="relative w-full max-w-md max-h-full mx-auto mt-[200px]">
+      <div className="relative w-full max-w-md max-h-full mx-auto mt-[100px]">
         <div className="relative bg-white rounded-lg shadow ">
           <button
             onClick={() => setmodal(false)}
