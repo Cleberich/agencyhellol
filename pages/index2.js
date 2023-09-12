@@ -29,7 +29,7 @@ export default function index2() {
           </div>
         </div>
         <div>
-          <h1 className="text-center mx-6 text-2xl lg:text-5xl font-regular my-4">
+          <h1 className="text-center mx-6 text-2xl lg:text-5xl font-semibold md:font-regular my-4">
             Conocé el{" "}
             <span className="font-bold text-red-600">
               Mejor Valor de VENTA{" "}
@@ -49,6 +49,7 @@ export default function index2() {
               autoPlay
               playsInline
               muted
+              controls
             ></video>
           </div>
           <div>
