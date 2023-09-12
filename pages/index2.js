@@ -47,6 +47,8 @@ export default function index2() {
               src="/img/video.mp4"
               className="w-[90%] mx-auto rounded-md"
               autoPlay
+              onCanPlay
+              loop
             ></video>
           </div>
           <div>
