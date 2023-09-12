@@ -44,10 +44,9 @@ export default function index2() {
         <main className="flex flex-col md:grid md:grid-cols-2 py-12">
           <div>
             <video
-              src="/img/video.mov"
+              src="/img/video.mp4"
               className="w-[90%] mx-auto rounded-md"
               autoPlay
-              muted
             ></video>
           </div>
           <div>
