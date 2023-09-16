@@ -42,7 +42,7 @@ export default function index2() {
           </h2>
         </div>
         <main className="flex flex-col lg:grid lg:grid-cols-2 py-12">
-          <div>
+          {/* <div>
             <video
               src="/img/video.mp4"
               className="w-[90%] mx-auto rounded-md"
@@ -51,7 +51,16 @@ export default function index2() {
               muted
               controls
             ></video>
-          </div>
+          </div> */}
+          <iframe
+            className="w-full h-[220px] md:h-[425px] lg:h-full"
+            src="https://www.youtube.com/embed/SnjG4Z39-e0"
+            title="¿Es importante hacer una tasación?"
+            autoPlay
+            muted
+            aria-controls="none"
+            allow="autoPlay; muted"
+          ></iframe>
           <div>
             {" "}
             <h3 className="text-left text-2xl font-semibold my-4 mx-4 text-white">
