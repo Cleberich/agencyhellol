@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function landing() {
   return (
-    <div className="bg-[#3E5054] min-h-screen">
+    <div className="bg-[#3E5054] pb-64">
       <Head>
         <title>Cleber Davila Agente Inmobiliario</title>
         <meta name="description" content="Cleber Davila agente inmobiliario" />
