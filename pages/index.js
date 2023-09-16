@@ -30,7 +30,7 @@ export default function landing() {
           <div></div>
           <div className="mt-12 flex justify-center gap-3 flex-col w-[80%] mx-auto">
             <a
-              href="/index2"
+              href="/tasacion-gratis"
               target="_blank"
               className="bg-gradient-to-b from-red-600 to-red-800 py-6    font-bold text-center rounded-xl px-6  shadow-md"
             >
