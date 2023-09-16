@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { db } from "@/services/firebase";
@@ -9,12 +9,14 @@ const Modal = ({ setmodal }) => {
   const [nombre, setnombre] = useState(null);
   const [telefono, settelefono] = useState(null);
   const [correo, setcorreo] = useState(null);
+  const [enviando, setenviando] = useState(false);
   const route = useRouter();
 
   const handlesubmit = async (e) => {
     e.preventDefault();
 
     try {
+      setenviando(true);
       console.log(nombre, telefono, correo);
 
       const fecha = new Date();
@@ -24,6 +26,7 @@ const Modal = ({ setmodal }) => {
     } catch (error) {
       console.log(error);
     } finally {
+      setenviando(false);
       route.push("/gracias");
     }
   };
@@ -120,7 +123,7 @@ const Modal = ({ setmodal }) => {
                 type="submit"
                 className="w-full text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
               >
-                Solicitar tasación
+                {enviando ? "Solicitando..." : " Solicitar tasación"}
               </button>
             </form>
           </div>

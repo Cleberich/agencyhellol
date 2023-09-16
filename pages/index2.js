@@ -14,7 +14,7 @@ export default function index2() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {modal && <Modal setmodal={setmodal} />}
-      <div className="">
+      <div className="bg-[#3E5054]">
         <div className="flex justify-start md:justify-center bg-red-600 p-3 md:p-6 rounded-b-[30px] gap-4">
           <img
             src="/img/cleber.jpg"
@@ -29,19 +29,19 @@ export default function index2() {
           </div>
         </div>
         <div>
-          <h1 className="text-center mx-6 text-2xl lg:text-5xl font-semibold md:font-regular my-4">
+          <h1 className="text-center mx-6 text-2xl lg:text-5xl font-semibold md:font-regular my-4 text-white">
             Conocé el{" "}
             <span className="font-bold text-red-600">
               Mejor Valor de VENTA{" "}
             </span>
             de tu Propiedad
           </h1>
-          <h2 className="font-bold text-black text-md mx-6 md:text-2xl text-center">
+          <h2 className="font-bold text-white text-md mx-6 md:text-2xl text-center">
             Que te Permita Vender en 2 meses o antes a través de un Informe de
             Tasación Profesional SIN COSTO 🤩
           </h2>
         </div>
-        <main className="flex flex-col md:grid md:grid-cols-2 py-12">
+        <main className="flex flex-col lg:grid lg:grid-cols-2 py-12">
           <div>
             <video
               src="/img/video.mp4"
@@ -54,25 +54,25 @@ export default function index2() {
           </div>
           <div>
             {" "}
-            <h3 className="text-left text-2xl font-semibold my-4 mx-4">
+            <h3 className="text-left text-2xl font-semibold my-4 mx-4 text-white">
               ¿Qué incluye un informe de tasación profesional?
             </h3>
-            <h4 className="my-6 mx-4">
+            <h4 className="my-6 mx-4 text-white">
               ✅ Datos de tu barrio y del mercado: Recibí información CLAVE que
               te va a permitir entender la situación inmobiliaria actual de tu
               barrio, cuál es un buen valor de venta y por qué.
             </h4>
-            <h4 className="my-6 mx-4">
+            <h4 className="my-6 mx-4 text-white">
               ✅ Propiedades con las que competís: Para Tasar investigo a fondo
               las propiedades que compiten con vos y te coloco los links en el
               informe para que las puedas revisar.
             </h4>
-            <h4 className="my-6 mx-4">
+            <h4 className="my-6 mx-4 text-white">
               ✅ Metodología de Comparables: Este proceso de tasación lo llevo a
               cabo por el método de comparables que es el más confiable y
               efectivo para vender al mejor valor.
             </h4>
-            <h5 className="mx-4">
+            <h5 className="mx-4 text-white">
               Y lo mejor, conmigo, el Informe de Tasación no tiene costo.
             </h5>
             <div className="mt-12 mx-4">
@@ -89,7 +89,7 @@ export default function index2() {
           <h2 className="font-bold text-white text-2xl text-center mx-4">
             ¿Por qué mis clientes logran vender su propiedad en 2 meses o antes?
           </h2>
-          <main className="flex gap-3 flex-col md:flex-row mx-auto justify-center py-12">
+          <main className="flex gap-3 flex-col md:flex-row mx-auto justify-center py-12 ">
             <div className="bg-white shadow-lg p-4 rounded-lg w-full">
               <img
                 src="/img/grafico.png"
@@ -141,15 +141,20 @@ export default function index2() {
             ¿Cuáles son los Pasos 🤝 para un Informe de Tasación Profesional
             Exitoso?
           </h2>
-          <div className="bg-white w-[90%] mx-auto rounded-xl  flex flex-col md:flex-row gap-5 p-4 ">
-            <div>
+          <div className="bg-white w-[90%] mx-auto rounded-xl  flex flex-col lg:flex-row gap-5 p-4 ">
+            <div className="lg:w-1/2">
               <img
                 src="/img/cleee.jpg"
                 alt="cleber davila"
                 className="w-full rounded-lg"
               />
+              <img
+                src="/img/cleeee.jpg"
+                alt="cleber davila"
+                className="w-full rounded-lg"
+              />
             </div>
-            <div>
+            <div className="lg:w-1/2">
               <h5 className="font-bold">Paso 1️⃣: Visita a Tu Propiedad</h5>
               <p className="mb-6">
                 Para relevar los datos técnicos, evaluar fortalezas de tu
