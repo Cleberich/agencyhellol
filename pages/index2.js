@@ -86,7 +86,7 @@ export default function index2() {
             ¿Por qué mis clientes logran vender su propiedad en 2 meses o antes?
           </h2>
           <main className="flex gap-3 flex-col md:flex-row mx-auto justify-center py-12 ">
-            <div className="bg-white shadow-lg p-4 rounded-lg w-full">
+            <div className="bg-white shadow-lg p-4 rounded-lg w-[95%] mx-auto ">
               <img
                 src="/img/grafico.png"
                 alt="dinero"
@@ -100,7 +100,7 @@ export default function index2() {
                 propiedades que NO se venden y con +12 meses en el mercado.
               </h5>
             </div>
-            <div className="bg-white shadow-lg p-4 rounded-lg w-full">
+            <div className="bg-white shadow-lg p-4 rounded-lg w-[95%] mx-auto">
               <img
                 src="/img/difusion.png"
                 alt="dinero"
@@ -114,7 +114,7 @@ export default function index2() {
                 Embudos Inmobiliarios y Campañas Publicitarias de PAGO.
               </h5>
             </div>
-            <div className="bg-white shadow-lg p-4 rounded-lg w-full">
+            <div className="bg-white shadow-lg p-4 rounded-lg w-[95%] mx-auto">
               <img
                 src="/img/seguimineto.png"
                 alt="dinero"
@@ -184,6 +184,14 @@ export default function index2() {
                 propiedades vendidas en la zona recientemente.
               </h3>
             </div>
+          </div>
+          <div className="mt-12 mx-auto flex justify-center">
+            <button
+              className="bg-yellow-300 mx-auto hover:bg-yellow-500 text-red-600 font-bold text-center rounded-full py-2 px-3 w-[90%] lg:w-64 "
+              onClick={() => setmodal(true)}
+            >
+              Solicitar Tasación Ahora
+            </button>
           </div>
         </main>
       </div>
