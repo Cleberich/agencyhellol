@@ -53,13 +53,9 @@ export default function index2() {
             ></video>
           </div> */}
           <iframe
-            className="w-full h-[220px] md:h-[425px] lg:h-full"
-            src="https://www.youtube.com/embed/SnjG4Z39-e0"
-            title="¿Es importante hacer una tasación?"
-            autoPlay
-            muted
-            aria-controls="none"
-            allow="autoPlay; muted"
+            className="w-[90%] mx-auto min-h-[200px] md:min-h-[465px] h-full rounded-xl"
+            src="https://www.youtube.com/embed/SnjG4Z39-e0?rel=0&amp;autoplay=0;?rel=0&amp;controls=0"
+            frameborder="0"
           ></iframe>
           <div>
             {" "}
