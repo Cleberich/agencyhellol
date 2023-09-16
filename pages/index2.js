@@ -90,7 +90,7 @@ export default function index2() {
             </div>
           </div>
         </main>
-        <section className="bg-[#181818] py-12 ">
+        <section className="bg-[#3E5054] py-12 ">
           <h2 className="font-bold text-white text-2xl text-center mx-4">
             ¿Por qué mis clientes logran vender su propiedad en 2 meses o antes?
           </h2>
