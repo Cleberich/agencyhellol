@@ -42,19 +42,10 @@ export default function index2() {
           </h2>
         </div>
         <main className="flex flex-col lg:grid lg:grid-cols-2 py-12">
-          {/* <div>
-            <video
-              src="/img/video.mp4"
-              className="w-[90%] mx-auto rounded-md"
-              autoPlay
-              playsInline
-              muted
-              controls
-            ></video>
-          </div> */}
           <iframe
             className="w-[90%] mx-auto min-h-[200px] md:min-h-[465px] h-full rounded-xl"
             src="https://www.youtube.com/embed/SnjG4Z39-e0?rel=0&amp;autoplay=1;?rel=0&amp;controls=0"
+            allow="autoplay"
             frameborder="0"
           ></iframe>
           <div>
