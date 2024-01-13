@@ -12,7 +12,7 @@ export default function index2() {
   }, [100]);
   return (
     <>
-      <div className="bg-[url('/img2/portadamobile.jpg')] sm:bg-[url('/img2/portadamobile.jpg')] md:bg-[url('/img2/hero3.png')] xl:bg-[url('/img2/hero3.png')] md:bg-cover xl:bg-cover h-auto 2xl:h-[105vh] bg-no-repeat w-full pb-[150px] md:bg-right">
+      <div className="bg-[url('/img2/portadamobile.png')] sm:bg-[url('/img2/portadamobile.png')] md:bg-[url('/img2/hero3.png')] xl:bg-[url('/img2/hero3.png')] md:bg-cover xl:bg-cover h-auto 2xl:h-[105vh] bg-no-repeat w-full pb-[150px] md:bg-right">
         <div className="">
           <nav className="pt-[36px] pb-[28px] flex justify-between">
             <div className="col">
