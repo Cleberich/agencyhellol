@@ -2,7 +2,7 @@ import React from "react";
 
 const Mobile = ({ setactivado, setborde, borde }) => {
   return (
-    <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 flex justify-center  md:hidden">
+    <div className="text-sm font-medium text-left text-gray-500 border-b border-gray-200 flex justify-left ml-6   md:hidden">
       <ul className="flex justify-center -mb-px">
         <li className="me-2">
           <button
@@ -33,7 +33,7 @@ const Mobile = ({ setactivado, setborde, borde }) => {
             Servicios
           </button>
         </li>
-        <li className="me-2">
+        {/* <li className="me-2">
           <button
             onClick={() => {
               setactivado("inversion"), setborde("activo3");
@@ -46,7 +46,7 @@ const Mobile = ({ setactivado, setborde, borde }) => {
           >
             Inversión
           </button>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

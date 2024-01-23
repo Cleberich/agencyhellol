@@ -26,19 +26,20 @@ export default function index2() {
             <ul className="hidden lg:flex justify-center text-[15px] text-white gap-[55px] font-normal col ">
               <li>
                 {" "}
-                <a href="#servicios">Servicios</a>
+                <a href="#servicios">¿Cómo puedo ayudarte?</a>
               </li>
               <li>
                 <a href="#cleber">¿Quién es Cleber Davila?</a>
               </li>
-              <li>Inversión</li>
-              <li>Contacto</li>
             </ul>
-            <div className="col">
+            <div className="col ">
               {" "}
-              <button className="bg-[#eb0303] rounded-[20px] text-[#fff] px-[22px] py-[10px] -mt-4 lg:mr-24 hidden md:flex">
+              <a
+                href="https://wa.link/hk2lut"
+                className="bg-[#eb0303] rounded-[20px] text-[#fff] px-[22px] py-[10px] -mt-4 lg:mr-24 hidden md:flex"
+              >
                 Contactar
-              </button>
+              </a>
             </div>
           </nav>
         </div>
@@ -55,12 +56,19 @@ export default function index2() {
           </h2>
         </div>
         <div className="mt-[40px] md:mt-[55px] flex ml-8 lg:ml-0 flex-col md:flex-row justify-left lg:justify-center gap-[10px] pb-[100px] w-[140px] md:w-full">
-          <button className="bg-white rounded-[20px] text-[#eb0303] px-[22px] py-[10px] ">
+          <a
+            href="https://www.linkedin.com/in/cleber-davila
+"
+            className="bg-white rounded-[20px] text-[#eb0303] px-[22px] py-[10px] "
+          >
             Ver Linkedin
-          </button>
-          <button className="bg-[#eb0303] rounded-[20px] text-[#fff] px-[22px] py-[10px]">
+          </a>
+          <a
+            href="https://wa.link/hk2lut"
+            className="bg-[#eb0303] rounded-[20px] text-[#fff] px-[34.5px] py-[10px] mx-auto md:mx-0"
+          >
             Contactar
-          </button>
+          </a>
         </div>
       </div>
       <h2
@@ -105,15 +113,16 @@ export default function index2() {
           </div>
         </main>
       )}
-      <main className="bg-[#7686A1] w-full h-[90vh] pt-[66px]">
+
+      <main className="bg-[#7686A1] w-full h-auto md:h-[90vh] pt-[66px]">
         <h3
-          className="text-white text-[36px]  font-bold text-center"
+          className="text-white text-[24px] md:text-[36px]  font-bold text-center"
           id="servicios"
         >
           ¿Cómo puedo ayudarte?
         </h3>
-        <main className="flex justify-center gap-6 mt-12">
-          <div className="col w-[322px] h-[344px] hover:shadow-lg hover:shadow-white cursor-pointer bg-[#233351] rounded-br-[20px] rounded-tr-[50px] rounded-bl-[50px] rounded-tl-[20px] ">
+        <main className="flex flex-col md:flex-row md:justify-center gap-6 mt-12">
+          <div className="col mx-auto w-[322px] h-[344px] hover:shadow-lg hover:shadow-white cursor-pointer bg-[#233351] rounded-br-[20px] rounded-tr-[50px] rounded-bl-[50px] rounded-tl-[20px] ">
             <h3 className="text-white text-[20px]  font-medium mt-4 text-center">
               Compra-venta-renta
             </h3>
@@ -127,7 +136,7 @@ export default function index2() {
               className="mx-auto mt-8"
             />
           </div>
-          <div className="col w-[322px] h-[344px] hover:shadow-lg hover:shadow-white cursor-pointer bg-[#292F3B] rounded-br-[20px] rounded-tr-[50px] rounded-bl-[50px] rounded-tl-[20px] ">
+          <div className="col mx-auto w-[322px] h-[344px] hover:shadow-lg hover:shadow-white cursor-pointer bg-[#292F3B] rounded-br-[20px] rounded-tr-[50px] rounded-bl-[50px] rounded-tl-[20px] ">
             <h3 className="text-white text-[20px]  font-medium mt-4 text-center">
               Asesorias
             </h3>
@@ -141,7 +150,7 @@ export default function index2() {
               className="mx-auto mt-8"
             />
           </div>
-          <div className="col w-[322px] h-[344px] hover:shadow-lg hover:shadow-white cursor-pointer bg-[#949BA5] rounded-br-[20px] rounded-tr-[50px] rounded-bl-[50px] rounded-tl-[20px] ">
+          <div className="col mx-auto w-[322px] h-[344px] hover:shadow-lg hover:shadow-white cursor-pointer bg-[#949BA5] rounded-br-[20px] rounded-tr-[50px] rounded-bl-[50px] rounded-tl-[20px] ">
             <h3 className="text-white text-[20px]  font-medium mt-4 text-center">
               Comparativo
             </h3>
@@ -160,8 +169,8 @@ export default function index2() {
       <div>
         <img src="/img2/azul.png" className="w-full" />
       </div>
-      <h3 className="text-[#1C2943] text-[36px]  font-bold text-center -mt-[300px] mb-[50px]">
-        Galeria
+      <h3 className="text-[#1C2943] text-[24px] md:text-[36px]  font-bold text-center md:-mt-[300px] ]">
+        Capacitaciones y reconocimientos
       </h3>
       <Gallery />
     </>

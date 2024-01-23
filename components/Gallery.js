@@ -5,7 +5,7 @@ const Gallery = () => {
   const [mostrar, setmostrar] = useState("/img2/premio.jpg");
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mx-[150px] pb-[100px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 mb-[40px] md:px-[150px] pb-[100px] pt-12 md:pt-0">
       {" "}
       <div>
         <img
