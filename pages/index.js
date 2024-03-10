@@ -20,7 +20,7 @@ export default function index5() {
         {" "}
         <img src="/img3/cleber.svg" alt="Cleber davila" className="w-full " />
       </div>
-      <div className="bg-[#fff]  -mt-32 md:-mt-16 px-6">
+      <div className="bg-[#fff]   md:-mt-16 px-6">
         <h2 className="text-[16px] md:text-[24px] text-[#7a7a7a] mb-4 font-bold text-center">
           Tener el valor correcto de tu propiedad marcara la diferencia entre{" "}
         </h2>
