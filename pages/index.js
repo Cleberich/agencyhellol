@@ -20,7 +20,7 @@ export default function index5() {
         {" "}
         <img src="/img3/cleber.png" alt="Cleber davila" className="w-full " />
         <img
-          src="/img3/cleberdavilaaa.jpg"
+          src="/img3/cleberdavilaaa.png"
           alt="Cleber davila"
           className="w-full "
         />
