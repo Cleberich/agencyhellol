@@ -12,7 +12,7 @@ const Testimonios = () => {
       <section className=" justify-center md:flex  hidden ">
         <img src="/img3/testimonios.svg" className="md:block  hidden" />
       </section>
-      <div className="flex px-6 justify-center  md:hidden">
+      <div className="flex px-4 justify-center  md:hidden">
         <img src="/img3/testimonios2.svg" className="w-full" />
       </div>
     </>

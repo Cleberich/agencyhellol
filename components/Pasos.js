@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Pasos = () => {
   return (
@@ -12,7 +13,7 @@ const Pasos = () => {
         <div className="flex flex-col ">
           {" "}
           <div className="flex justify-center">
-            <img src="/img3/visita.gif" className="w-40" />
+            <Image src="/img3/visita.gif" className="w-40" />
           </div>
           <h2 className="text-[20px] text-center font-bold mb-4">
             Visita a la propiedad
@@ -24,7 +25,7 @@ const Pasos = () => {
         </div>
         <div className="flex flex-col ">
           <div className="flex justify-center">
-            <img src="/img3/informe.gif" className="w-40 mb-5" />
+            <Image src="/img3/informe.gif" className="w-40 mb-5" />
           </div>
           <h2 className="text-[20px] text-start font-bold mb-4">
             Elaboración de informe y tasación
@@ -37,7 +38,7 @@ const Pasos = () => {
         </div>
         <div className="flex flex-col ">
           <div className="flex justify-center">
-            <img src="/img3/entrega.gif" className="w-40" />
+            <Image src="/img3/entrega.gif" className="w-40" />
           </div>
           <h2 className="text-[20px] text-center font-bold mb-4">
             Entrega de informe
