@@ -3,7 +3,7 @@ import React from "react";
 const Testimonios = () => {
   return (
     <>
-      <h2 className="text-[18px] md:text-[46px] font-[900] text-center -mt-4 text-[#062740]">
+      <h2 className="text-[18px] md:text-[46px] font-[900] text-center mt-20 text-[#062740]">
         ¿Aún tienes dudas?
       </h2>
       <h2 className="text-[12px] md:text-[24px] text-[#062740] mb-4 font-semibold md:font-bold text-center px-6">

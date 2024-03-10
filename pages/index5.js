@@ -16,19 +16,19 @@ export default function index5() {
         />
       </div>
 
-      <div className="block md:hidden bg-[url('/img3/portadacelular.svg')] bg-cover bg-no-repeat  pt-52">
+      <div className="block md:hidden ">
         {" "}
         <img src="/img3/cleber.svg" alt="Cleber davila" className="w-full " />
       </div>
-      <div className="bg-[#fff] h-screen mt-0 md:-mt-16 px-6">
+      <div className="bg-[#fff]  -mt-32 md:-mt-16 px-6">
         <h2 className="text-[16px] md:text-[24px] text-[#7a7a7a] mb-4 font-bold text-center">
           Tener el valor correcto de tu propiedad marcara la diferencia entre{" "}
         </h2>
         <h2 className="text-[28px] md:text-[46px] font-[900] text-center -mt-4 text-[#062740]">
           Vender o <span className="text-[#FBBF0E]">NO</span> vender tu inmueble{" "}
         </h2>
-        <Video />
       </div>
+      <Video />
       <Informacion />
       <Pasos />
       <Testimonios />

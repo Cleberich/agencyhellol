@@ -22,7 +22,7 @@ const Video = () => {
       <h2 className="text-[18px] md:text-[24px] text-[#062740] mb-4 font-bold text-center">
         hablemos de números...
       </h2>
-      <div className="flex justify-center">
+      <div className="flex justify-center w-full">
         <img src="/img3/mapas.png" />
       </div>
     </>
