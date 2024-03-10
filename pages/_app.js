@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setPaginaLista(true);
-    }, 1000);
+    }, 100);
   }, []);
   return paginaLista ? (
     <Component {...pageProps} />
