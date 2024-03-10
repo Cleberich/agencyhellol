@@ -8,7 +8,7 @@ import React from "react";
 export default function index5() {
   return (
     <>
-      <div className="hidden md:block bg-black">
+      <div className="hidden md:block bg-[#070509]">
         <img
           src="/img3/portadaditada.svg"
           alt="Cleber davila"
@@ -16,7 +16,7 @@ export default function index5() {
         />
       </div>
 
-      <div className="block md:hidden bg-black ">
+      <div className="block md:hidden bg-[#070509] ">
         {" "}
         <img src="/img3/cleber.svg" alt="Cleber davila" className="w-full " />
       </div>
