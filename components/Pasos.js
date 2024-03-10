@@ -5,7 +5,7 @@ const Pasos = () => {
     <>
       <h2 className="text-[18px] md:text-[24px] font-bold text-[#151616] text-center mt-12 px-6">
         {" "}
-        ¿Cuáles son los pasos obtener para un informe de tasación Profesional
+        ¿Cuáles son los pasos para obtener un informe de tasación Profesional
         exitoso?
       </h2>
       <div className="mx-6 md:mx-44 grid grid-cols-1 md:grid-cols-3 gap-5 py-20">
