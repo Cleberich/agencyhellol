@@ -19,6 +19,11 @@ export default function index5() {
       <div className="block md:hidden bg-[#070509] ">
         {" "}
         <img src="/img3/cleber.png" alt="Cleber davila" className="w-full " />
+        <img
+          src="/img3/cleberdavilaaa.jpg"
+          alt="Cleber davila"
+          className="w-full "
+        />
       </div>
       <div className="bg-[#fff]  mt-16 md:-mt-16 px-6">
         <h2 className="text-[16px] md:text-[24px] text-[#7a7a7a] mb-4 font-bold text-center">
