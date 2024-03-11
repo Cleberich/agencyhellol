@@ -12,7 +12,7 @@ const Pasos = () => {
         <div className="flex flex-col ">
           {" "}
           <div className="flex justify-center">
-            <img src="/img3/visita.png" alt="tasacion" className="" />
+            <img src="/img3/visita.png" alt="tasacion" className="w-24" />
           </div>
           <h2 className="text-[20px] text-center font-bold mb-4">
             Visita a la propiedad
@@ -24,7 +24,11 @@ const Pasos = () => {
         </div>
         <div className="flex flex-col ">
           <div className="flex justify-center">
-            <img src="/img3/informe.png" alt="tasacion" className=" mb-5" />
+            <img
+              src="/img3/informe.png"
+              alt="tasacion"
+              className=" mb-5 w-24"
+            />
           </div>
           <h2 className="text-[20px] text-start font-bold mb-4">
             Elaboración de informe y tasación
@@ -37,7 +41,7 @@ const Pasos = () => {
         </div>
         <div className="flex flex-col ">
           <div className="flex justify-center">
-            <img src="/img3/entrega.png" alt="tasacion" className="" />
+            <img src="/img3/entrega.png" alt="tasacion" className="w-24" />
           </div>
           <h2 className="text-[20px] text-center font-bold mb-4">
             Entrega de informe
