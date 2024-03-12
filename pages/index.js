@@ -1,13 +1,17 @@
+import { useState } from "react";
 import BotonSolicitar from "@/components/BotonSolicitar";
 import Informacion from "@/components/Informacion";
 import Pasos from "@/components/Pasos";
 import Testimonios from "@/components/Testimonios";
 import Video from "@/components/Video";
 import React from "react";
+import Modal from "@/components/Modal";
 
 export default function index5() {
+  const [modal, setmodal] = useState(false);
   return (
     <>
+      {modal && <Modal setmodal={setmodal} />}
       <div className="hidden md:block bg-[#070509]">
         <img
           src="/img3/portadaditada.svg"
@@ -35,7 +39,7 @@ export default function index5() {
       <Informacion />
       <Pasos />
       <Testimonios />
-      <BotonSolicitar />
+      <BotonSolicitar setmodal={setmodal} />
     </>
   );
 }

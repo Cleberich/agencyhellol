@@ -13,10 +13,10 @@ const Video = () => {
         ></iframe>
       </div> */}
 
-      <h2 className="text-[28px] md:text-[46px] font-[900] text-center -mt-4 text-[#062740]">
+      <h2 className="text-[28px] md:text-[46px] font-[900] text-center mt-12 text-[#062740]">
         ¿Por qué necesito una tasación profesional?
       </h2>
-      <h2 className="text-[18px] md:text-[24px] text-[#062740] mb-4 font-bold text-center">
+      <h2 className="text-[18px] md:text-[24px] text-[#062740]  mb-4 font-bold text-center">
         hablemos de números...
       </h2>
       <div className="flex justify-center w-full">

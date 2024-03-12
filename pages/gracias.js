@@ -3,19 +3,19 @@ import Head from "next/head";
 
 export default function gracias() {
   return (
-    <div className="bg-[#3E5054] min-h-screen">
+    <div className="bg-[#1a1a1a] min-h-screen">
       <Head>
         <title>Cleber Davila Agente Inmobiliario</title>
         <meta name="description" content="Cleber Davila agente inmobiliario" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="pb-20 ">
-        <div className="flex justify-start md:justify-center bg-red-600 p-3 md:p-6 rounded-b-[30px] gap-4">
+      <main className="pb-20 bg-[#1a1a1a]">
+        <div className="flex justify-start md:justify-center p-3 md:p-6 rounded-b-[30px] gap-4">
           <img
-            src="/img/cleber.jpg"
+            src="/img3/cleberdavilaaaa.png"
             alt="Cleber agente inmobiliario"
-            className="rounded-full w-16 h-16 md:w-32 md:h-32"
+            className="rounded-full w-16 h-16 md:w-44 md:h-44"
           />
           <div className="flex flex-col md:hidden ">
             <h2 className="font-bold text-xl mt-2 text-white">Cleber Davila</h2>
@@ -40,21 +40,21 @@ export default function gracias() {
           </div>
           <div className="mt-12 flex justify-center gap-3 flex-col w-64 mx-auto">
             <a
-              href="https://wa.link/q05x37"
+              href="https://wa.link/9rvzm3"
               target="_blank"
               className="bg-green-600 hover:bg-green-700 text-white font-bold text-center rounded-full py-2 px-6  "
             >
               Contactar por Whatsapp
             </a>
             <a
-              href="https://wa.link/q05x37"
+              href="https://www.instagram.com/cleberdavilaa/?hl=es-la"
               target="_blank"
               className="bg-[#A82FB6] hover:bg-[#F5009D] text-white font-bold text-center rounded-full py-2 px-6  "
             >
               Seguime en instagram
             </a>
             <a
-              href="https://wa.link/q05x37"
+              href="https://www.tiktok.com/@cleberdavilaa"
               target="_blank"
               className="bg-black hover:bg-gray-900 text-white font-bold text-center rounded-full py-2 px-6  "
             >
